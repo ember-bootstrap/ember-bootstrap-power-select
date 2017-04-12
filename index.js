@@ -2,5 +2,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-bootstrap-powerselect'
+  name: 'ember-bootstrap-power-select'
 };
