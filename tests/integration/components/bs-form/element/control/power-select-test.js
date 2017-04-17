@@ -98,3 +98,20 @@ test('it can disable select', function(assert) {
   {{/bs-form}}`);
   assert.ok(find('.ember-power-select-trigger').getAttribute('aria-disabled'));
 });
+
+test('it can render array of objects with objectLabelPath', async function(assert) {
+  this.set('options', this.get('options').map((title) => ({ title })));
+  this.set('prop', this.get('options')[0]);
+  this.render(hbs`
+  {{#bs-form model=this as |form|}}
+    {{form.element controlType="power-select" property="prop" options=options optionLabelPath="title"}}
+  {{/bs-form}}`);
+  assert.equal(findAll('.ember-power-select-trigger').length, 1);
+  assert.equal(find('.ember-power-select-selected-item').textContent.trim(), 'foo');
+  await clickTrigger();
+  assert.equal(findAll('.ember-power-select-option').length, 2);
+  assert.equal(findAll('.ember-power-select-option')[0].textContent.trim(), 'foo');
+  assert.equal(findAll('.ember-power-select-option')[1].textContent.trim(), 'bar');
+  await click(findAll('.ember-power-select-option')[1]);
+  assert.equal(this.get('prop'), this.get('options')[1]);
+});

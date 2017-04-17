@@ -9,6 +9,7 @@
     {{/el.control}}
   {{/form.element}}
   {{form.element controlType="power-select" property="baz" label="baz" options=options}}
+  {{form.element controlType="power-select" property="baz" label="baz" options=optionsPojo optionLabelPath="title"}}
 {{/bs-form}}
 
 <p>{{foo}}</p>
