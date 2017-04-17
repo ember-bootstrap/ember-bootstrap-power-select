@@ -2,9 +2,24 @@
   {{#power-select
     options=options
     selected=value
-    placeholder=placeholder
-    disabled=disabled
     onchange=(action onChange)
+    disabled=disabled
+    placeholder=placeholder
+    searchEnabled=searchEnabled
+    searchPlaceholder=searchPlaceholder
+    loadingMessage=loadingMessage
+    noMatchesMessage=noMatchesMessage
+    searchMessage=searchMessage
+    selectedComponent=selectedComponent
+    optionsComponent=optionsComponent
+    matcher=matcher
+    searchField=searchField
+    renderInPlace=renderInPlace
+    search=search
+    allowClear=allowClear
+    dropdownPosition=dropdownPosition
+    closeOnSelect=closeOnSelect
+    class=class
     as |item|
   }}
     {{yield item}}
@@ -14,8 +29,23 @@
     options=options
     labelPath=optionLabelPath
     selected=value
-    placeholder=placeholder
-    disabled=disabled
     onchange=(action onChange)
+    disabled=disabled
+    placeholder=placeholder
+    searchEnabled=searchEnabled
+    searchPlaceholder=searchPlaceholder
+    loadingMessage=loadingMessage
+    noMatchesMessage=noMatchesMessage
+    searchMessage=searchMessage
+    selectedComponent=selectedComponent
+    optionsComponent=optionsComponent
+    matcher=matcher
+    searchField=searchField
+    renderInPlace=renderInPlace
+    search=search
+    allowClear=allowClear
+    dropdownPosition=dropdownPosition
+    closeOnSelect=closeOnSelect
+    class=class
   }}
 {{/if}}

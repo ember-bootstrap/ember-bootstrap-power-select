@@ -115,3 +115,14 @@ test('it can render array of objects with objectLabelPath', async function(asser
   await click(findAll('.ember-power-select-option')[1]);
   assert.equal(this.get('prop'), this.get('options')[1]);
 });
+
+test('it passes power-select options', async function(assert) {
+  this.render(hbs`
+  {{#bs-form model=this as |form|}}
+    {{#form.element controlType="power-select" property="prop2" options=options placeholder="something" as |el|}}
+      {{el.control searchEnabled=false}}
+    {{/form.element}}
+  {{/bs-form}}`);
+  await clickTrigger();
+  assert.notOk(find('.ember-power-select-search-input'));
+});
