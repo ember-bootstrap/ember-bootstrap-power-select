@@ -1,5 +1,16 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+{{#bs-form model=this as |form|}}
+  {{#form.element controlType="power-select" property="foo" label="foo" options=options as |el|}}
+    {{el.control}}
+  {{/form.element}}
+  {{#form.element controlType="power-select" property="bar" label="bar" options=options as |el|}}
+    {{#el.control as |item|}}
+      {{item}}
+    {{/el.control}}
+  {{/form.element}}
+  {{form.element controlType="power-select" property="baz" label="baz" options=options}}
+{{/bs-form}}
+
+<p>{{foo}}</p>
+<p>{{bar}}</p>
+<p>{{baz}}</p>

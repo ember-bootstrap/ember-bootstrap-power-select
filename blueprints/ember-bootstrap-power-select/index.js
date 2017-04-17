@@ -25,7 +25,7 @@ module.exports = {
   },
 
   afterInstall() {
-    return this.addAddonToProject('ember-power-select')
+    return this.addAddonsToProject(['ember-power-select','ember-power-select-blockless'])
       .then(() => this.addPreprocessorStyleImport());
   },
 

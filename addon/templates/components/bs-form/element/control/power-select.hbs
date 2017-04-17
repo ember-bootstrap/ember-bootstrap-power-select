@@ -1,0 +1,20 @@
+{{#if hasBlock}}
+  {{#power-select
+    options=options
+    selected=value
+    placeholder=placeholder
+    disabled=disabled
+    onchange=(action onChange)
+    as |item|
+  }}
+    {{yield item}}
+  {{/power-select}}
+{{else}}
+  {{power-select-blockless
+    options=options
+    selected=value
+    placeholder=placeholder
+    disabled=disabled
+    onchange=(action onChange)
+  }}
+{{/if}}
