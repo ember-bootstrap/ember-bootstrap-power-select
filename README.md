@@ -1,5 +1,7 @@
 # ember-bootstrap-power-select
 
+[![Build Status](https://travis-ci.org/kaliber5/ember-bootstrap-power-select.svg?branch=master)](https://travis-ci.org/kaliber5/ember-bootstrap-power-select)
+
 Integrate [ember-power-select](http://www.ember-power-select.com/) into your [ember-bootstrap](http;//www.ember.bootstrap.com)
 forms.
 
