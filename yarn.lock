@@ -1884,9 +1884,9 @@ ember-basic-dropdown@^0.31.0:
     ember-native-dom-helpers "^0.3.8"
     ember-wormhole "^0.5.1"
 
-ember-bootstrap@kaliber5/ember-bootstrap#master:
-  version "1.0.0-alpha.10"
-  resolved "https://codeload.github.com/kaliber5/ember-bootstrap/tar.gz/5d2a009a8172f32479ff35f29f8d365e5c311889"
+ember-bootstrap@^1.0.0-alpha.11:
+  version "1.0.0-alpha.11"
+  resolved "https://registry.yarnpkg.com/ember-bootstrap/-/ember-bootstrap-1.0.0-alpha.11.tgz#276710b214771df5606f9cc856112735ef2146c8"
   dependencies:
     broccoli-funnel "^1.0.1"
     broccoli-merge-trees "^1.1.1"
