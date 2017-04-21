@@ -13,6 +13,10 @@ You need to have at least `1.0.0-alpha.11` of ember-bootstrap installed in your 
 ember install ember-bootstrap-power-select
 ```
 
+This will additionally install `ember-power-select` and `ember-power-select-blockless` into your app, and setup its
+Bootstrap theme, either by importing the appropriate Less or Sass file (if you use one of these preprocessors), or by
+editing your `ember-cli-build.js` to include the static theme CSS (if you use plain CSS). 
+
 ## Usage
 
 With this addon installed, you have a new `controlType` of `power-select` available. Use the `options` property to 
