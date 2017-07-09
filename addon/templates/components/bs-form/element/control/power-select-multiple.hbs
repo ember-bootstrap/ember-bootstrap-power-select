@@ -1,0 +1,51 @@
+{{#if hasBlock}}
+  {{#power-select-multiple
+    options=options
+    selected=value
+    onchange=(action onChange)
+    disabled=disabled
+    placeholder=placeholder
+    searchEnabled=searchEnabled
+    searchPlaceholder=searchPlaceholder
+    loadingMessage=loadingMessage
+    noMatchesMessage=noMatchesMessage
+    searchMessage=searchMessage
+    selectedComponent=selectedComponent
+    optionsComponent=optionsComponent
+    matcher=matcher
+    searchField=searchField
+    renderInPlace=renderInPlace
+    search=search
+    allowClear=allowClear
+    dropdownPosition=dropdownPosition
+    closeOnSelect=closeOnSelect
+    class=class
+    as |item|
+  }}
+    {{yield item}}
+  {{/power-select-multiple}}
+{{else}}
+  {{power-select-multiple-blockless
+    options=options
+    labelPath=optionLabelPath
+    selected=value
+    onchange=(action onChange)
+    disabled=disabled
+    placeholder=placeholder
+    searchEnabled=searchEnabled
+    searchPlaceholder=searchPlaceholder
+    loadingMessage=loadingMessage
+    noMatchesMessage=noMatchesMessage
+    searchMessage=searchMessage
+    selectedComponent=selectedComponent
+    optionsComponent=optionsComponent
+    matcher=matcher
+    searchField=searchField
+    renderInPlace=renderInPlace
+    search=search
+    allowClear=allowClear
+    dropdownPosition=dropdownPosition
+    closeOnSelect=closeOnSelect
+    class=class
+  }}
+{{/if}}
