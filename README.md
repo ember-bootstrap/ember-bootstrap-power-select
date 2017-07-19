@@ -39,6 +39,15 @@ options label:
 {{/bs-form}}
 ```
 
+### Power Select Multiple
+The `power-select-multiple` is also supported and works similarly to the `power-select` implementation.
+
+```hbs
+{{#bs-form model=yourModel as |form|}}  
+  {{form.element controlType="power-select-multiple" property="foo" label="Choose" options=options}}
+{{/bs-form}}
+```
+
 ### Advanced usage
 
 If you need more control of the power-select configuration, use the yielded `control` component to get direct access
