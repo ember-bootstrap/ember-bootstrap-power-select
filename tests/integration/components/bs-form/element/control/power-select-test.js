@@ -126,3 +126,13 @@ test('it passes power-select options', async function(assert) {
   await clickTrigger();
   assert.notOk(find('.ember-power-select-search-input'));
 });
+
+test('it passes selected option', async function(assert) {
+  this.set('options', this.get('options'));
+  this.set('selected', this.get('options')[0]);
+  this.render(hbs`
+  {{#bs-form model=this as |form|}}
+    {{form.element controlType="power-select" options=options selected=selected}}
+  {{/bs-form}}`);
+  assert.equal(find('.ember-power-select-selected-item').textContent.trim(), 'foo');
+});
