@@ -1,8 +1,7 @@
-import Ember from 'ember';
+import { map } from '@ember/object/computed';
+import Controller from '@ember/controller';
 
-const { computed } = Ember;
-
-export default Ember.Controller.extend({
+export default Controller.extend({
   options: ['foo', 'bar'],
-  optionsPojo: computed.map('options', (title) => ({ title }))
+  optionsPojo: map('options', (title) => ({ title }))
 });
