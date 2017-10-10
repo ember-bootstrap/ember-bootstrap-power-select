@@ -48,7 +48,7 @@
     "ember-power-select": "^1.6.1",
     "ember-power-select-blockless": "^0.3.1",
     "ember-resolver": "^4.0.0",
-    "ember-source": "~2.15.0",
+    "ember-source": "~2.16.0",
     "loader.js": "^4.2.3"
   },
   "engines": {
