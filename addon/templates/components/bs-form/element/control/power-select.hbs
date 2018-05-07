@@ -20,9 +20,9 @@
     dropdownPosition=dropdownPosition
     closeOnSelect=closeOnSelect
     class=class
-    as |item|
+    as |item select|
   }}
-    {{yield item}}
+    {{yield item select}}
   {{/power-select}}
 {{else}}
   {{power-select-blockless
