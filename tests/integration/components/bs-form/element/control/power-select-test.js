@@ -2,7 +2,7 @@ import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
 import { render, click, find, findAll } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
-import { clickTrigger } from '../../../../../helpers/ember-power-select'
+import { clickTrigger } from 'ember-power-select/test-support/helpers'
 
 module('Integration | Component | bs form/element/control/power select', function(hooks) {
   setupRenderingTest(hooks);
@@ -120,9 +120,10 @@ module('Integration | Component | bs form/element/control/power select', functio
     await render(hbs`
     {{#bs-form model=this as |form|}}
       {{#form.element controlType="power-select" property="prop2" options=options placeholder="something" as |el|}}
-        {{el.control searchEnabled=false}}
+        {{el.control searchEnabled=false triggerClass='form-control' }}
       {{/form.element}}
     {{/bs-form}}`);
+    assert.ok(find('.form-control'));
     await clickTrigger();
     assert.notOk(find('.ember-power-select-search-input'));
   });
