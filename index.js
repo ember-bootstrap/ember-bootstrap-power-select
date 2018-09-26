@@ -1,5 +1,5 @@
 'use strict';
 
 module.exports = {
-  name: 'ember-bootstrap-power-select'
+  name: require('./package').name
 };
