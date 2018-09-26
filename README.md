@@ -6,7 +6,7 @@
 [![Ember Observer Score](https://emberobserver.com/badges/ember-bootstrap-power-select.svg)](https://emberobserver.com/addons/ember-bootstrap-power-select)
 [![npm version](https://badge.fury.io/js/ember-bootstrap-power-select.svg)](https://badge.fury.io/js/ember-bootstrap-power-select)
 
-Integrate [ember-power-select](http://www.ember-power-select.com/) into your [ember-bootstrap](http;//www.ember.bootstrap.com)
+Integrate [ember-power-select](http://www.ember-power-select.com/) into your [ember-bootstrap](https://www.ember-bootstrap.com)
 forms.
 
 ## Installation
