@@ -3,5 +3,17 @@ import layout from '../../../../templates/components/bs-form/element/control/pow
 
 export default Control.extend({
   layout,
-  tagName: ''
+  tagName: '',
+
+  /**
+   * @property powerSelectComponent
+   * @type {String}
+   */
+  powerSelectComponent: 'power-select-multiple',
+
+  /**
+   * @property powerSelectBlocklessComponent
+   * @type {String}
+   */
+  powerSelectBlocklessComponent: 'power-select-blockless'
 });
