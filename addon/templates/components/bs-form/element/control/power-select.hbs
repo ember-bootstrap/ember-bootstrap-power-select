@@ -1,5 +1,5 @@
 {{#if hasBlock}}
-  {{#power-select
+  {{#component powerSelectComponent
     afterOptionsComponent=afterOptionsComponent
     allowClear=allowClear
     ariaDescribedBy=ariaDescribedBy
@@ -54,9 +54,9 @@
     as |item select|
   }}
     {{yield item select}}
-  {{/power-select}}
+  {{/component}}
 {{else}}
-  {{power-select-blockless
+  {{component powerSelectBlocklessComponent
     afterOptionsComponent=afterOptionsComponent
     allowClear=allowClear
     ariaDescribedBy=ariaDescribedBy
