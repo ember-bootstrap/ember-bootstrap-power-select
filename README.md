@@ -1,7 +1,6 @@
 # ember-bootstrap-power-select
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/kaliber5/ember-bootstrap-power-select.svg)](https://greenkeeper.io/)
-
 [![Build Status](https://travis-ci.org/kaliber5/ember-bootstrap-power-select.svg?branch=master)](https://travis-ci.org/kaliber5/ember-bootstrap-power-select)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-bootstrap-power-select.svg)](https://emberobserver.com/addons/ember-bootstrap-power-select)
 [![npm version](https://badge.fury.io/js/ember-bootstrap-power-select.svg)](https://badge.fury.io/js/ember-bootstrap-power-select)
