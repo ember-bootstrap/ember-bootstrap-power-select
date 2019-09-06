@@ -11,9 +11,11 @@ forms.
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember.js v3.4 or above
+* Ember.js v3.11 or above
 * Ember CLI v2.13 or above
 * Node.js v8 or above
+
+Please use `v1.x` if you need support for Ember <= 3.10.
 
 Installation
 ------------------------------------------------------------------------------
@@ -31,7 +33,7 @@ editing your `ember-cli-build.js` to include the static theme CSS (if you use pl
 Usage
 ------------------------------------------------------------------------------
 
-With this addon installed, you have a new `controlType` of `power-select` available. Use the `options` property to 
+With this addon installed, you have a new `controlType` of `power-select` available. Use the `options` property to
 set the array of selectable options:
 
 ```hbs
@@ -62,7 +64,7 @@ The `power-select-multiple` is also supported and works similarly to the `power-
 ### Advanced usage
 
 If you need more control of the power-select configuration, use the yielded `control` component to get direct access
-to the power-select component. The power-select's `selected`, `disabled` and `placeholder` properties and the `onchange`
+to the power-select component. The power-select's `selected`, `disabled` and `placeholder` properties and the `onChange`
 action are already wired up to the controlling `form.element` for you. Set any other options as you need:
 
 ```hbs
