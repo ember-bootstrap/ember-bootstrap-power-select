@@ -3535,16 +3535,7 @@ ember-popper@^0.9.0:
     fastboot-transform "^0.1.0"
     popper.js "^1.14.1"
 
-ember-power-select-blockless@^0.5.0:
-  version "0.5.0"
-  resolved "https://registry.yarnpkg.com/ember-power-select-blockless/-/ember-power-select-blockless-0.5.0.tgz#b5a5f314695d4d7258dd6c8e519d448227dac77c"
-  integrity sha512-Qr9Evzy2w4NMFhya4rv4NmH5z5qeTTE1CI6GPdZHua0W3bGwccAlKISFQDFg5dZOWr3+nQVT9izj7OYiNPeazA==
-  dependencies:
-    ember-cli-babel "^6.6.0"
-    ember-cli-htmlbars "^2.0.1"
-    ember-power-select "^2.0.1"
-
-ember-power-select@^2.0.0, ember-power-select@^2.0.1:
+ember-power-select@^2.0.0:
   version "2.3.5"
   resolved "https://registry.yarnpkg.com/ember-power-select/-/ember-power-select-2.3.5.tgz#c702d5cf5b2c6c2fd422f0a8253e982cecbdd048"
   integrity sha512-75QJklWSthm9gedcbpKC0ZALaQXEfKlIRRy5pb87GsXcykFn0rBgxlnGsITWO+IX9u2V0oojQPorIa/ZYKVd3Q==

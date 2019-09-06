@@ -10,10 +10,4 @@ export default Control.extend({
    * @type {String}
    */
   powerSelectComponent: 'power-select-multiple',
-
-  /**
-   * @property powerSelectBlocklessComponent
-   * @type {String}
-   */
-  powerSelectBlocklessComponent: 'power-select-multiple-blockless'
 });
