@@ -8,7 +8,16 @@
 Integrate [ember-power-select](http://www.ember-power-select.com/) into your [ember-bootstrap](https://www.ember-bootstrap.com)
 forms.
 
-## Installation
+Compatibility
+------------------------------------------------------------------------------
+
+* Ember.js v3.4 or above
+* Ember CLI v2.13 or above
+* Node.js v8 or above
+
+
+Installation
+------------------------------------------------------------------------------
 
 You need to have at least `1.0.0-alpha.11` of ember-bootstrap installed in your app. Then run...
 
@@ -20,7 +29,9 @@ This will additionally install `ember-power-select` and `ember-power-select-bloc
 Bootstrap theme, either by importing the appropriate Less or Sass file (if you use one of these preprocessors), or by
 editing your `ember-cli-build.js` to include the static theme CSS (if you use plain CSS). 
 
-## Usage
+
+Usage
+------------------------------------------------------------------------------
 
 With this addon installed, you have a new `controlType` of `power-select` available. Use the `options` property to 
 set the array of selectable options:
@@ -76,3 +87,14 @@ You can also use the block form of the component to customize the rendering of t
 ```
 
 Please consult the [ember-power-select documentation](http://www.ember-power-select.com/docs) for all available options.
+
+Contributing
+------------------------------------------------------------------------------
+
+See the [Contributing](CONTRIBUTING.md) guide for details.
+
+
+License
+------------------------------------------------------------------------------
+
+This project is licensed under the [MIT License](LICENSE.md).
