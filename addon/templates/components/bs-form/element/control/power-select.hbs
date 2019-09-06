@@ -1,7 +1,7 @@
 {{#component this.powerSelectComponent
   afterOptionsComponent=@afterOptionsComponent
   allowClear=@allowClear
-  ariaDescribedBy=@ariaDescribedBy
+  ariaDescribedBy=this.ariaDescribedBy
   ariaInvalid=@ariaInvalid
   ariaLabel=@ariaLabel
   ariaLabelledBy=@ariaLabelledBy
@@ -23,7 +23,7 @@
   matchTriggerWidth=@matchTriggerWidth
   noMatchesMessage=@noMatchesMessage
   onblur=@onblur
-  onchange=(action @onChange)
+  onchange=(action this.onChange)
   onclose=@onclose
   onfocus=@onfocus
   oninput=@oninput
@@ -41,7 +41,7 @@
   searchField=(if hasBlock @searchField (if @searchField @searchField @optionLabelPath))
   searchMessage=@searchMessage
   searchPlaceholder=@searchPlaceholder
-  selected=@value
+  selected=this.value
   selectedItemComponent=@selectedItemComponent
   tabindex=@tabindex
   triggerClass=@triggerClass
