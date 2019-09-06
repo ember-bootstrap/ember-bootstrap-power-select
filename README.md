@@ -15,7 +15,6 @@ Compatibility
 * Ember CLI v2.13 or above
 * Node.js v8 or above
 
-
 Installation
 ------------------------------------------------------------------------------
 
@@ -29,7 +28,6 @@ This will additionally install `ember-power-select` and `ember-power-select-bloc
 Bootstrap theme, either by importing the appropriate Less or Sass file (if you use one of these preprocessors), or by
 editing your `ember-cli-build.js` to include the static theme CSS (if you use plain CSS). 
 
-
 Usage
 ------------------------------------------------------------------------------
 
@@ -37,27 +35,28 @@ With this addon installed, you have a new `controlType` of `power-select` availa
 set the array of selectable options:
 
 ```hbs
-{{#bs-form model=yourModel as |form|}}  
-  {{form.element controlType="power-select" property="foo" label="Choose" options=options}}
-{{/bs-form}}
+<BsForm @model={{yourModel}} as |form|>
+  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} />
+</BsForm>
 ```
 
 If your options array consists of objects, use the `optionLabelPath` to specify the property that should be used as the
 options label:
 
 ```hbs
-{{#bs-form model=yourModel as |form|}}  
-  {{form.element controlType="power-select" property="foo" label="Choose" options=options optionLabelPath="title"}}
-{{/bs-form}}
+<BsForm @model={{yourModel}} as |form|>
+  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} @optionLabelPath="title" />
+</BsForm>
 ```
 
 ### Power Select Multiple
+
 The `power-select-multiple` is also supported and works similarly to the `power-select` implementation.
 
 ```hbs
-{{#bs-form model=yourModel as |form|}}  
-  {{form.element controlType="power-select-multiple" property="foo" label="Choose" options=options}}
-{{/bs-form}}
+<BsForm @model={{yourModel}} as |form|>
+  <form.element @controlType="power-select-multiple" @property="foo" @label="Choose" @options={{options}} />
+</BsForm>
 ```
 
 ### Advanced usage
@@ -67,23 +66,23 @@ to the power-select component. The power-select's `selected`, `disabled` and `pl
 action are already wired up to the controlling `form.element` for you. Set any other options as you need:
 
 ```hbs
-{{#bs-form model=yourModel as |form|}}
-  {{#form.element controlType="power-select" property="foo" label="Choose" options=options as |el|}}
-    {{el.control searchPlaceholder="Type your name"}}
-  {{/form.element}}
-{{/bs-form}}
+<BsForm @model={{yourModel}} as |form|>
+  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} as |el|>
+    <el.control @searchPlaceholder="Type your name" />
+  </form.element>
+</BsForm>
 ```
 
 You can also use the block form of the component to customize the rendering of the options:
 
 ```hbs
-{{#bs-form model=yourModel as |form|}}
-  {{#form.element controlType="power-select" property="foo" label="Choose" options=options as |el|}}
-    {{#el.control searchPlaceholder="Type your name" as |item|}}
+<BsForm @model={{yourModel}} as |form|>
+  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} as |el|>
+    <el.control @searchPlaceholder="Type your name" as |item|>
       {{item.name}}
-    {{/el.control}}
-  {{/form.element}}
-{{/bs-form}}
+    </el.control>
+  </form.element>
+</BsForm>
 ```
 
 Please consult the [ember-power-select documentation](http://www.ember-power-select.com/docs) for all available options.
@@ -92,7 +91,6 @@ Contributing
 ------------------------------------------------------------------------------
 
 See the [Contributing](CONTRIBUTING.md) guide for details.
-
 
 License
 ------------------------------------------------------------------------------
