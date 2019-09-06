@@ -17,12 +17,12 @@ module('Integration | Component | bs form/element/control/power select', functio
     {{#bs-form model=this as |form|}}
       {{form.element controlType="power-select" property="prop" options=options}}
     {{/bs-form}}`);
-    assert.equal(findAll('.ember-power-select-trigger').length, 1);
-    assert.equal(find('.ember-power-select-selected-item').textContent.trim(), 'foo');
+    assert.dom('.ember-power-select-trigger').exists({ count: 1 });
+    assert.dom('.ember-power-select-selected-item').hasText('foo');
     await clickTrigger();
-    assert.equal(findAll('.ember-power-select-option').length, 2);
-    assert.equal(findAll('.ember-power-select-option')[0].textContent.trim(), 'foo');
-    assert.equal(findAll('.ember-power-select-option')[1].textContent.trim(), 'bar');
+    assert.dom('.ember-power-select-option').exists({ count: 2 });
+    assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
+    assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
     assert.equal(this.get('prop'), 'bar');
   });
@@ -34,12 +34,12 @@ module('Integration | Component | bs form/element/control/power select', functio
         {{el.control}}
       {{/form.element}}
     {{/bs-form}}`);
-    assert.equal(findAll('.ember-power-select-trigger').length, 1);
-    assert.equal(find('.ember-power-select-selected-item').textContent.trim(), 'foo');
+    assert.dom('.ember-power-select-trigger').exists({ count: 1 });
+    assert.dom('.ember-power-select-selected-item').hasText('foo');
     await clickTrigger();
-    assert.equal(findAll('.ember-power-select-option').length, 2);
-    assert.equal(findAll('.ember-power-select-option')[0].textContent.trim(), 'foo');
-    assert.equal(findAll('.ember-power-select-option')[1].textContent.trim(), 'bar');
+    assert.dom('.ember-power-select-option').exists({ count: 2 });
+    assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
+    assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
     assert.equal(this.get('prop'), 'bar');
   });
@@ -53,12 +53,12 @@ module('Integration | Component | bs form/element/control/power select', functio
         {{/el.control}} 
       {{/form.element}}
     {{/bs-form}}`);
-    assert.equal(findAll('.ember-power-select-trigger').length, 1);
-    assert.equal(find('.ember-power-select-selected-item').textContent.trim(), 'foo');
+    assert.dom('.ember-power-select-trigger').exists({ count: 1 });
+    assert.dom('.ember-power-select-selected-item').hasText('foo');
     await clickTrigger();
-    assert.equal(findAll('.ember-power-select-option').length, 2);
-    assert.equal(findAll('.ember-power-select-option')[0].textContent.trim(), 'foo');
-    assert.equal(findAll('.ember-power-select-option')[1].textContent.trim(), 'bar');
+    assert.dom('.ember-power-select-option').exists({ count: 2 });
+    assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
+    assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
     assert.equal(this.get('prop'), 'bar');
   });
@@ -68,7 +68,7 @@ module('Integration | Component | bs form/element/control/power select', functio
     {{#bs-form model=this as |form|}}
       {{form.element controlType="power-select" property="prop2" options=options placeholder="something"}}
     {{/bs-form}}`);
-    assert.equal(find('.ember-power-select-trigger').textContent.trim(), 'something');
+    assert.dom('.ember-power-select-trigger').hasText('something');
 
     await render(hbs`
     {{#bs-form model=this as |form|}}
@@ -78,7 +78,7 @@ module('Integration | Component | bs form/element/control/power select', functio
         {{/el.control}} 
       {{/form.element}}
     {{/bs-form}}`);
-    assert.equal(find('.ember-power-select-trigger').textContent.trim(), 'something');
+    assert.dom('.ember-power-select-trigger').hasText('something');
   });
 
   test('it can disable select', async function(assert) {
@@ -106,12 +106,12 @@ module('Integration | Component | bs form/element/control/power select', functio
     {{#bs-form model=this as |form|}}
       {{form.element controlType="power-select" property="prop" options=options optionLabelPath="title"}}
     {{/bs-form}}`);
-    assert.equal(findAll('.ember-power-select-trigger').length, 1);
-    assert.equal(find('.ember-power-select-selected-item').textContent.trim(), 'foo');
+    assert.dom('.ember-power-select-trigger').exists({ count: 1 });
+    assert.dom('.ember-power-select-selected-item').hasText('foo');
     await clickTrigger();
-    assert.equal(findAll('.ember-power-select-option').length, 2);
-    assert.equal(findAll('.ember-power-select-option')[0].textContent.trim(), 'foo');
-    assert.equal(findAll('.ember-power-select-option')[1].textContent.trim(), 'bar');
+    assert.dom('.ember-power-select-option').exists({ count: 2 });
+    assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
+    assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
     assert.equal(this.get('prop'), this.get('options')[1]);
   });
@@ -123,8 +123,8 @@ module('Integration | Component | bs form/element/control/power select', functio
         {{el.control searchEnabled=false triggerClass='form-control' }}
       {{/form.element}}
     {{/bs-form}}`);
-    assert.ok(find('.form-control'));
+    assert.dom('.form-control').exists();
     await clickTrigger();
-    assert.notOk(find('.ember-power-select-search-input'));
+    assert.dom('.ember-power-select-search-input').doesNotExist();
   });
 });
