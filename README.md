@@ -5,7 +5,7 @@
 [![Ember Observer Score](https://emberobserver.com/badges/ember-bootstrap-power-select.svg)](https://emberobserver.com/addons/ember-bootstrap-power-select)
 [![npm version](https://badge.fury.io/js/ember-bootstrap-power-select.svg)](https://badge.fury.io/js/ember-bootstrap-power-select)
 
-Integrate [ember-power-select](http://www.ember-power-select.com/) into your [ember-bootstrap](https://www.ember-bootstrap.com)
+Integrate [Ember Power Select](http://www.ember-power-select.com/) into your [Ember Bootstrap](https://www.ember-bootstrap.com)
 forms.
 
 Compatibility
@@ -89,7 +89,7 @@ You can also use the block form of the component to customize the rendering of t
 </BsForm>
 ```
 
-Please consult the [ember-power-select documentation](http://www.ember-power-select.com/docs) for all available options.
+Please consult the [Ember Power Select documentation](http://www.ember-power-select.com/docs) for all available options.
 
 Contributing
 ------------------------------------------------------------------------------
