@@ -5,12 +5,14 @@
 [![Ember Observer Score](https://emberobserver.com/badges/ember-bootstrap-power-select.svg)](https://emberobserver.com/addons/ember-bootstrap-power-select)
 [![npm version](https://badge.fury.io/js/ember-bootstrap-power-select.svg)](https://badge.fury.io/js/ember-bootstrap-power-select)
 
-Integrate [ember-power-select](http://www.ember-power-select.com/) into your [ember-bootstrap](https://www.ember-bootstrap.com)
+Integrate [Ember Power Select](http://www.ember-power-select.com/) into your [Ember Bootstrap](https://www.ember-bootstrap.com)
 forms.
 
 Compatibility
 ------------------------------------------------------------------------------
 
+* Ember Power Select v3 or above
+* Ember Bootstrap v3 or above
 * Ember.js v3.11 or above
 * Ember CLI v2.13 or above
 * Node.js v8 or above
@@ -20,13 +22,11 @@ Please use `v1.x` if you need support for Ember <= 3.10.
 Installation
 ------------------------------------------------------------------------------
 
-You need to have at least `1.0.0-alpha.11` of ember-bootstrap installed in your app. Then run...
-
 ```bash
 ember install ember-bootstrap-power-select
 ```
 
-This will additionally install `ember-power-select` and `ember-power-select-blockless` into your app, and setup its
+This will additionally install `ember-power-select` into your app, and setup its
 Bootstrap theme, either by importing the appropriate Less or Sass file (if you use one of these preprocessors), or by
 editing your `ember-cli-build.js` to include the static theme CSS (if you use plain CSS). 
 
@@ -87,7 +87,7 @@ You can also use the block form of the component to customize the rendering of t
 </BsForm>
 ```
 
-Please consult the [ember-power-select documentation](http://www.ember-power-select.com/docs) for all available options.
+Please consult the [Ember Power Select documentation](http://www.ember-power-select.com/docs) for all available options.
 
 Contributing
 ------------------------------------------------------------------------------
