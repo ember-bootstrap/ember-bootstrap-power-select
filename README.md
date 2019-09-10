@@ -11,6 +11,8 @@ forms.
 Compatibility
 ------------------------------------------------------------------------------
 
+* Ember Power Select v3 or above
+* Ember Bootstrap v3 or above
 * Ember.js v3.11 or above
 * Ember CLI v2.13 or above
 * Node.js v8 or above
