@@ -1,38 +1,38 @@
 <h1>Ember Bootstrap Power Select</h1>
 
-{{#bs-form model=this as |form|}}
+<BsForm @model={{this}} as |form|>
   <fieldset>
     <legend>
       Power Select
     </legend>
-    {{#form.element controlType="power-select" property="foo" label="foo" placeholder="asf" options=options as |el|}}
-      {{el.control searchEnabled=false searchPlaceholder="Type your name"}}
-    {{/form.element}}
-    {{#form.element controlType="power-select" property="bar" label="bar" options=options as |el|}}
-      {{#el.control as |item|}}
+    <form.element @controlType="power-select" @property="foo" @label="foo" placeholder="asf" @options={{options}} as |el|>
+      <el.control @searchEnabled={{false}} @searchPlaceholder="Type your name" />
+    </form.element>
+    <form.element @controlType="power-select" @property="bar" @label="bar" @options={{options}} as |el|>
+      <el.control as |item|>
         {{item}}
-      {{/el.control}}
-    {{/form.element}}
-    {{form.element controlType="power-select" property="baz" label="baz" options=options}}
-    {{form.element controlType="power-select" property="baz" label="baz" options=optionsPojo optionLabelPath="title"}}
+      </el.control>
+    </form.element>
+    <form.element @controlType="power-select" @property="baz" @label="baz" @options={{options}} />
+    <form.element @controlType="power-select" @property="baz" @label="baz" @options={{optionsPojo}} @optionLabelPath="title" />
   </fieldset>
 
   <fieldset>
     <legend>
       Power Select Multiple
     </legend>
-    {{#form.element controlType="power-select-multiple" property="fooMulti" label="foo" placeholder="asf" options=options as |el|}}
-      {{el.control searchEnabled=false searchPlaceholder="Type your name"}}
-    {{/form.element}}
-    {{#form.element controlType="power-select-multiple" property="barMulti" label="bar" options=options as |el|}}
-      {{#el.control as |item|}}
+    <form.element @controlType="power-select-multiple" @property="fooMulti" @label="foo" placeholder="asf" @options={{options}} as |el|>
+      <el.control @searchEnabled={{false}} @searchPlaceholder="Type your name" />
+    </form.element>
+    <form.element @controlType="power-select-multiple" @property="barMulti" @label="bar" @options={{options}} as |el|>
+      <el.control as |item|>
         {{item}}
-      {{/el.control}}
-    {{/form.element}}
-    {{form.element controlType="power-select-multiple" property="bazMulti" label="baz" options=options}}
-    {{form.element controlType="power-select-multiple" property="bazMulti" label="baz" options=optionsPojo optionLabelPath="title"}}
+      </el.control>
+    </form.element>
+    <form.element @controlType="power-select-multiple" @property="bazMulti" @label="baz" @options={{options}} />
+    <form.element @controlType="power-select-multiple" @property="bazMulti" @label="baz" @options={{optionsPojo}} @optionLabelPath="title" />
   </fieldset>
-{{/bs-form}}
+</BsForm>
 
 <h3>Power Select Values</h3>
 <p><strong>foo: </strong>{{foo}}</p>
