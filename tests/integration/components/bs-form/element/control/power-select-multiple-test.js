@@ -147,4 +147,15 @@ module('Integration | Component | bs form/element/control/power select multiple'
     await clickTrigger();
     assert.dom('.ember-power-select-search-input').doesNotExist();
   });
+
+  test('it passes HTML attributes', async function(assert) {
+    // HTML attributes are not applied to any element if `renderInPlace` is `false`
+    await render(hbs`
+    <BsForm @model={{hash}} as |form|>
+      <form.element @controlType="power-select-multiple" @property="prop" @options={{array}} as |el|>
+        <el.control @renderInPlace={{true}} data-test-foo />
+      </form.element>
+    </BsForm>`);
+    assert.dom('[data-test-foo]').exists();
+  });
 });
