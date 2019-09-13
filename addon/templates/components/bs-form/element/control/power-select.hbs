@@ -1,68 +1,71 @@
-{{#component this.powerSelectComponent
-  afterOptionsComponent=@afterOptionsComponent
-  allowClear=@allowClear
-  animationEnabled=@animationEnabled
-  ariaDescribedBy=this.ariaDescribedBy
-  ariaInvalid=@ariaInvalid
-  ariaLabel=@ariaLabel
-  ariaLabelledBy=@ariaLabelledBy
-  beforeOptionsComponent=@beforeOptionsComponent
-  buildSelection=@buildSelection
-  calculatePosition=@calculatePosition
-  class=@class
-  closeOnSelect=@closeOnSelect
-  defaultHighlighted=@defaultHighlighted
-  destination=@destination
-  disabled=@disabled
-  dropdownClass=@dropdownClass
-  eventType=@eventType
-  extra=@extra
-  groupComponent=@groupComponent
-  highlightOnHover=@highlightOnHover
-  horizontalPosition=@horizontalPosition
-  initiallyOpened=@initiallyOpened
-  loadingMessage=@loadingMessage
-  matcher=@matcher
-  matchTriggerWidth=@matchTriggerWidth
-  noMatchesMessage=@noMatchesMessage
-  onBlur=@onBlur
-  onChange=(action this.onChange)
-  onClose=@onClose
-  onFocus=@onFocus
-  onInput=@onInput
-  onKeyDown=@onKeyDown
-  onOpen=@onOpen
-  options=@options
-  optionsComponent=@optionsComponent
-  placeholder=@placeholder
-  placeholderComponent=@placeholderComponent
-  preventScroll=@preventScroll
-  registerAPI=@registerAPI
-  renderInPlace=@renderInPlace
-  scrollTo=@scrollTo
-  search=@search
-  searchEnabled=@searchEnabled
-  searchField=(if hasBlock @searchField (if @searchField @searchField @optionLabelPath))
-  searchMessage=@searchMessage
-  searchPlaceholder=@searchPlaceholder
-  selected=this.value
-  selectedItemComponent=@selectedItemComponent
-  tabindex=@tabindex
-  triggerClass=@triggerClass
-  triggerComponent=@triggerComponent
-  triggerId=@triggerId
-  triggerRole=@triggerRole
-  typeAheadMatcher=@typeAheadMatcher
-  verticalPosition=@verticalPosition
-  as |item select|
-}}
-  {{#if hasBlock}}
-    {{yield item select}}
-  {{else}}
-    {{#if @optionLabelPath}}
-      {{get item @optionLabelPath}}
+{{#let (component this.powerSelectComponent) as |PowerSelect|}}
+  <PowerSelect
+    @afterOptionsComponent={{@afterOptionsComponent}}
+    @allowClear={{@allowClear}}
+    @animationEnabled={{@animationEnabled}}
+    @ariaDescribedBy={{this.ariaDescribedBy}}
+    @ariaInvalid={{@ariaInvalid}}
+    @ariaLabel={{@ariaLabel}}
+    @ariaLabelledBy={{@ariaLabelledBy}}
+    @beforeOptionsComponent={{@beforeOptionsComponent}}
+    @buildSelection={{@buildSelection}}
+    @calculatePosition={{@calculatePosition}}
+    @class={{@class}}
+    @closeOnSelect={{@closeOnSelect}}
+    @defaultHighlighted={{@defaultHighlighted}}
+    @destination={{@destination}}
+    @disabled={{@disabled}}
+    @dropdownClass={{@dropdownClass}}
+    @eventType={{@eventType}}
+    @extra={{@extra}}
+    @groupComponent={{@groupComponent}}
+    @highlightOnHover={{@highlightOnHover}}
+    @horizontalPosition={{@horizontalPosition}}
+    @initiallyOpened={{@initiallyOpened}}
+    @loadingMessage={{@loadingMessage}}
+    @matcher={{@matcher}}
+    @matchTriggerWidth={{@matchTriggerWidth}}
+    @noMatchesMessage={{@noMatchesMessage}}
+    @onBlur={{@onBlur}}
+    @onChange={{action this.onChange}}
+    @onClose={{@onClose}}
+    @onFocus={{@onFocus}}
+    @onInput={{@onInput}}
+    @onKeyDown={{@onKeyDown}}
+    @onOpen={{@onOpen}}
+    @options={{@options}}
+    @optionsComponent={{@optionsComponent}}
+    @placeholder={{@placeholder}}
+    @placeholderComponent={{@placeholderComponent}}
+    @preventScroll={{@preventScroll}}
+    @registerAPI={{@registerAPI}}
+    @renderInPlace={{@renderInPlace}}
+    @scrollTo={{@scrollTo}}
+    @search={{@search}}
+    @searchEnabled={{@searchEnabled}}
+    @searchField={{if hasBlock @searchField (if @searchField @searchField @optionLabelPath)}}
+    @searchMessage={{@searchMessage}}
+    @searchPlaceholder={{@searchPlaceholder}}
+    @selected={{this.value}}
+    @selectedItemComponent={{@selectedItemComponent}}
+    @tabindex={{@tabindex}}
+    @triggerClass={{@triggerClass}}
+    @triggerComponent={{@triggerComponent}}
+    @triggerId={{@triggerId}}
+    @triggerRole={{@triggerRole}}
+    @typeAheadMatcher={{@typeAheadMatcher}}
+    @verticalPosition={{@verticalPosition}}
+    ...attributes
+    as |item select|
+  >
+    {{#if hasBlock}}
+      {{yield item select}}
     {{else}}
-      {{item}}
+      {{#if @optionLabelPath}}
+        {{get item @optionLabelPath}}
+      {{else}}
+        {{item}}
+      {{/if}}
     {{/if}}
-  {{/if}}
-{{/component}}
+  </PowerSelect>
+{{/let}}
