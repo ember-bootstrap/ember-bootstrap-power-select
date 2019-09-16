@@ -2,6 +2,7 @@
 
 #### Features
 * Adds support for Ember Power Select v3.
+* Does not require `ember-power-select-blockless` anymore. You may be able to remove it from your project.
 
 #### :boom: Breaking Change
 * Increased minimum supported versions of dependencies:
