@@ -51,6 +51,18 @@ options label:
 </BsForm>
 ```
 
+If you need more control over how the options label are rendered (e.g. for formatting or internalization) you should use the yielded `<control>` component in block mode:
+
+```hbs
+<BsForm @model={{yourModel}} as |form|>
+  <form.element @controlType="power-select" @property="author" @label="Author" @options={{options}} as |el|>
+    <el.control as |option|>
+      {{option.name}} (b. {{format-date option.dayOfBirth}})
+    </el.control>
+  </form.element>
+</BsForm>
+```
+
 ### Power Select Multiple
 
 The `power-select-multiple` is also supported and works similarly to the `power-select` implementation.
@@ -71,18 +83,6 @@ action are already wired up to the controlling `form.element` for you. Set any o
 <BsForm @model={{yourModel}} as |form|>
   <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} as |el|>
     <el.control @searchPlaceholder="Type your name" />
-  </form.element>
-</BsForm>
-```
-
-You can also use the block form of the component to customize the rendering of the options:
-
-```hbs
-<BsForm @model={{yourModel}} as |form|>
-  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} as |el|>
-    <el.control @searchPlaceholder="Type your name" as |item|>
-      {{item.name}}
-    </el.control>
   </form.element>
 </BsForm>
 ```
