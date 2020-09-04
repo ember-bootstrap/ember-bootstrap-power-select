@@ -5,41 +5,41 @@
     <legend>
       Power Select
     </legend>
-    <form.element @controlType="power-select" @property="foo" @label="foo" placeholder="asf" @options={{options}} as |el|>
+    <form.element @controlType="power-select" @property="foo" @label="foo" placeholder="asf" @options={{this.options}} as |el|>
       <el.control @searchEnabled={{false}} @searchPlaceholder="Type your name" />
     </form.element>
-    <form.element @controlType="power-select" @property="bar" @label="bar" @options={{options}} as |el|>
+    <form.element @controlType="power-select" @property="bar" @label="bar" @options={{this.options}} as |el|>
       <el.control as |item|>
         {{item}}
       </el.control>
     </form.element>
-    <form.element @controlType="power-select" @property="baz" @label="baz" @options={{options}} />
-    <form.element @controlType="power-select" @property="baz" @label="baz" @options={{optionsPojo}} @optionLabelPath="title" />
+    <form.element @controlType="power-select" @property="baz" @label="baz" @options={{this.options}} />
+    <form.element @controlType="power-select" @property="baz" @label="baz" @options={{this.optionsPojo}} @optionLabelPath="title" />
   </fieldset>
 
   <fieldset>
     <legend>
       Power Select Multiple
     </legend>
-    <form.element @controlType="power-select-multiple" @property="fooMulti" @label="foo" placeholder="asf" @options={{options}} as |el|>
+    <form.element @controlType="power-select-multiple" @property="fooMulti" @label="foo" placeholder="asf" @options={{this.options}} as |el|>
       <el.control @searchEnabled={{false}} @searchPlaceholder="Type your name" />
     </form.element>
-    <form.element @controlType="power-select-multiple" @property="barMulti" @label="bar" @options={{options}} as |el|>
+    <form.element @controlType="power-select-multiple" @property="barMulti" @label="bar" @options={{this.options}} as |el|>
       <el.control as |item|>
         {{item}}
       </el.control>
     </form.element>
-    <form.element @controlType="power-select-multiple" @property="bazMulti" @label="baz" @options={{options}} />
-    <form.element @controlType="power-select-multiple" @property="bazMulti" @label="baz" @options={{optionsPojo}} @optionLabelPath="title" />
+    <form.element @controlType="power-select-multiple" @property="bazMulti" @label="baz" @options={{this.options}} />
+    <form.element @controlType="power-select-multiple" @property="bazMulti" @label="baz" @options={{this.optionsPojo}} @optionLabelPath="title" />
   </fieldset>
 </BsForm>
 
 <h3>Power Select Values</h3>
-<p><strong>foo: </strong>{{foo}}</p>
-<p><strong>bar: </strong>{{bar}}</p>
-<p><strong>baz: </strong>{{baz}}</p>
+<p><strong>foo: </strong>{{this.foo}}</p>
+<p><strong>bar: </strong>{{this.bar}}</p>
+<p><strong>baz: </strong>{{this.baz}}</p>
 
 <h3>Power Select Multiple Values</h3>
-<p><strong>foo: </strong>{{fooMulti}}</p>
-<p><strong>bar: </strong>{{barMulti}}</p>
-<p><strong>baz: </strong>{{bazMulti}}</p>
+<p><strong>foo: </strong>{{this.fooMulti}}</p>
+<p><strong>bar: </strong>{{this.barMulti}}</p>
+<p><strong>baz: </strong>{{this.bazMulti}}</p>

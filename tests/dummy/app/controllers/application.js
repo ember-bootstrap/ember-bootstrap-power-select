@@ -1,8 +1,9 @@
-import { map } from '@ember/object/computed';
-import { computed } from '@ember/object';
 import Controller from '@ember/controller';
 
-export default Controller.extend({
-  options: computed(() => ['foo', 'bar']),
-  optionsPojo: map('options', (title) => ({ title }))
-});
+export default class ApplicationController extends Controller {
+  options = ['foo', 'bar'];
+  optionsPojo = [
+    { title: 'foo' },
+    { title: 'bar' }
+  ];
+}

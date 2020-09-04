@@ -24,7 +24,7 @@ module('Integration | Component | bs form/element/control/power select', functio
     assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
     assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
-    assert.equal(this.get('prop'), 'bar');
+    assert.equal(this.prop, 'bar');
   });
 
   test('it renders as blockless control component', async function(assert) {
@@ -41,7 +41,7 @@ module('Integration | Component | bs form/element/control/power select', functio
     assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
     assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
-    assert.equal(this.get('prop'), 'bar');
+    assert.equal(this.prop, 'bar');
   });
 
   test('it renders as block control component', async function(assert) {
@@ -60,7 +60,7 @@ module('Integration | Component | bs form/element/control/power select', functio
     assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
     assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
-    assert.equal(this.get('prop'), 'bar');
+    assert.equal(this.prop, 'bar');
   });
 
   test('it renders placeholder', async function(assert) {
@@ -100,8 +100,8 @@ module('Integration | Component | bs form/element/control/power select', functio
   });
 
   test('it can render array of objects with objectLabelPath', async function(assert) {
-    this.set('options', this.get('options').map((title) => ({ title })));
-    this.set('prop', this.get('options')[0]);
+    this.set('options', this.options.map((title) => ({ title })));
+    this.set('prop', this.options[0]);
     await render(hbs`
     <BsForm @model={{this}} as |form|>
       <form.element @controlType="power-select" @property="prop" @options={{options}} @optionLabelPath="title" />
@@ -113,7 +113,7 @@ module('Integration | Component | bs form/element/control/power select', functio
     assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
     assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
     await click(findAll('.ember-power-select-option')[1]);
-    assert.equal(this.get('prop'), this.get('options')[1]);
+    assert.equal(this.prop, this.options[1]);
   });
 
   test('it passes power-select options', async function(assert) {
