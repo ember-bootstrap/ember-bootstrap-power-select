@@ -1,4 +1,4 @@
-{{#let (component this.powerSelectComponent) as |PowerSelect|}}
+{{#let (component (if @powerSelectComponent @powerSelectComponent "power-select-multiple")) as |PowerSelect|}}
   <PowerSelect
     @afterOptionsComponent={{@afterOptionsComponent}}
     @allowClear={{@allowClear}}
@@ -35,7 +35,6 @@
     @onOpen={{@onOpen}}
     @options={{@options}}
     @optionsComponent={{@optionsComponent}}
-    @placeholder={{@placeholder}}
     @placeholderComponent={{@placeholderComponent}}
     @preventScroll={{@preventScroll}}
     @registerAPI={{@registerAPI}}

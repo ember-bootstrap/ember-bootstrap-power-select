@@ -63,34 +63,16 @@ module('Integration | Component | bs form/element/control/power select', functio
     assert.equal(this.prop, 'bar');
   });
 
-  test('it renders placeholder', async function(assert) {
-    await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select" @property="prop2" @options={{options}} @placeholder="something" />
-    </BsForm>`);
-    assert.dom('.ember-power-select-trigger').hasText('something');
-
-    await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select" @property="prop2" @options={{options}} @placeholder="something" as |el|>
-        <el.control as |val|>
-          {{val}}
-        </el.control>
-      </form.element>
-    </BsForm>`);
-    assert.dom('.ember-power-select-trigger').hasText('something');
-  });
-
   test('it can disable select', async function(assert) {
     await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select" @property="prop" @options={{options}} @disabled={{true}} />
+    <BsForm @model={{this}} @disabled={{true}} as |form|>
+      <form.element @controlType="power-select" @property="prop" @options={{options}} />
     </BsForm>`);
     assert.ok(find('.ember-power-select-trigger').getAttribute('aria-disabled'));
 
     await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select" @property="prop" @options={{options}} @disabled={{true}} as |el|>
+    <BsForm @model={{this}} @disabled={{true}} as |form|>
+      <form.element @controlType="power-select" @property="prop" @options={{options}} as |el|>
         <el.control as |val|>
           {{val}}
         </el.control>
