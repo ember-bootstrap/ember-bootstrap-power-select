@@ -15,7 +15,7 @@ Compatibility
 * Ember Bootstrap v3 or above
 * Ember.js v3.11 or above
 * Ember CLI v2.13 or above
-* Node.js v8 or above
+* Node.js v10 or above
 
 Please use `v1.x` if you need support for Ember <= 3.10.
 
