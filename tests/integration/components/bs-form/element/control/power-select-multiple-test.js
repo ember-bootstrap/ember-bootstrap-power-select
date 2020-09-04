@@ -18,7 +18,7 @@ module('Integration | Component | bs form/element/control/power select multiple'
       <form.element @controlType="power-select-multiple" @property="prop" @options={{options}} />
     </BsForm>`);
     assert.dom('.ember-power-select-trigger').exists({ count: 1 });
-    assert.dom(find('.ember-power-select-multiple-options').textContent.replace("×", "").trim(), 'foo');
+    assert.equal(find('.ember-power-select-multiple-options').textContent.replace("×", "").trim(), 'foo');
     await clickTrigger();
     assert.dom('.ember-power-select-option').exists({ count: 2 });
     assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
