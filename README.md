@@ -1,6 +1,5 @@
 # ember-bootstrap-power-select
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/kaliber5/ember-bootstrap-power-select.svg)](https://greenkeeper.io/)
 [![Build Status](https://travis-ci.org/kaliber5/ember-bootstrap-power-select.svg?branch=master)](https://travis-ci.org/kaliber5/ember-bootstrap-power-select)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-bootstrap-power-select.svg)](https://emberobserver.com/addons/ember-bootstrap-power-select)
 [![npm version](https://badge.fury.io/js/ember-bootstrap-power-select.svg)](https://badge.fury.io/js/ember-bootstrap-power-select)
@@ -11,13 +10,11 @@ forms.
 Compatibility
 ------------------------------------------------------------------------------
 
-* Ember Power Select v3 or above
-* Ember Bootstrap v3 or above
+* Ember Power Select v4 or above
+* Ember Bootstrap v4 or above
 * Ember.js v3.16 or above
-* Ember CLI v2.13 or above
+* Ember CLI v3.15 or above
 * Node.js v10 or above
-
-Please use `v1.x` if you need support for Ember <= 3.10.
 
 Installation
 ------------------------------------------------------------------------------

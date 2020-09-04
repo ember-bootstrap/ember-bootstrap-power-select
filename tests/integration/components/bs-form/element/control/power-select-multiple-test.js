@@ -63,54 +63,16 @@ module('Integration | Component | bs form/element/control/power select multiple'
     assert.deepEqual(this.prop, ["foo", "bar"]);
   });
 
-  test('it renders placeholder', async function(assert) {
-    await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select-multiple" @property="prop2" @options={{options}} @placeholder="something" />
-    </BsForm>`);
-    assert.dom('.ember-power-select-placeholder').hasText('something');
-
-    await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select-multiple" @property="prop2" @options={{options}} @placeholder="something" as |el|>
-        <el.control as |val|>
-          {{val}}
-        </el.control>
-      </form.element>
-    </BsForm>`);
-    assert.dom('.ember-power-select-placeholder').hasText('something');
-  });
-
-  test('it renders placeholder (search enabled)', async function(assert) {
-    await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select-multiple" @property="prop2" @options={{options}} @placeholder="something" as |el|>
-        <el.control @searchEnabled={{true}} />
-      </form.element>
-    </BsForm>`);
-    assert.dom('.ember-power-select-trigger-multiple-input').hasAttribute("placeholder", 'something');
-
-    await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select-multiple" @property="prop2" @options={{options}} @placeholder="something" as |el|>
-        <el.control @searchEnabled={{true}} as |val|>
-          {{val}}
-        </el.control>
-      </form.element>
-    </BsForm>`);
-    assert.dom('.ember-power-select-trigger-multiple-input').hasAttribute("placeholder", 'something');
-  });
-
   test('it can disable select', async function(assert) {
     await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select-multiple" @property="prop" @options={{options}} @disabled={{true}} />
+    <BsForm @model={{this}} @disabled={{true}} as |form|>
+      <form.element @controlType="power-select-multiple" @property="prop" @options={{options}} />
     </BsForm>`);
     assert.ok(find('.ember-power-select-trigger').getAttribute('aria-disabled'));
 
     await render(hbs`
-    <BsForm @model={{this}} as |form|>
-      <form.element @controlType="power-select-multiple" @property="prop" @options={{options}} @disabled={{true}} as |el|>
+    <BsForm @model={{this}} @disabled={{true}} as |form|>
+      <form.element @controlType="power-select-multiple" @property="prop" @options={{options}} as |el|>
         <el.control as |val|>
           {{val}}
         </el.control>
