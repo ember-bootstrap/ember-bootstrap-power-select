@@ -1,6 +1,6 @@
 # ember-bootstrap-power-select
 
-[![Build Status](https://travis-ci.org/kaliber5/ember-bootstrap-power-select.svg?branch=master)](https://travis-ci.org/kaliber5/ember-bootstrap-power-select)
+![CI](https://github.com/kaliber5/ember-bootstrap-power-select/workflows/CI/badge.svg)
 [![Ember Observer Score](https://emberobserver.com/badges/ember-bootstrap-power-select.svg)](https://emberobserver.com/addons/ember-bootstrap-power-select)
 [![npm version](https://badge.fury.io/js/ember-bootstrap-power-select.svg)](https://badge.fury.io/js/ember-bootstrap-power-select)
 
@@ -73,7 +73,7 @@ The `power-select-multiple` is also supported and works similarly to the `power-
 ### Advanced usage
 
 If you need more control of the power-select configuration, use the yielded `control` component to get direct access
-to the power-select component. The power-select's `selected`, `disabled` and `placeholder` properties and the `onChange`
+to the power-select component. The power-select's `selected`, `disabled` properties and the `onChange`
 action are already wired up to the controlling `form.element` for you. Set any other options as you need:
 
 ```hbs
