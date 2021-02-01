@@ -1299,7 +1299,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@glimmer/component@^1.0.1", "@glimmer/component@^1.0.3":
+"@glimmer/component@^1.0.1", "@glimmer/component@^1.0.2", "@glimmer/component@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@glimmer/component/-/component-1.0.3.tgz#38c26fc4855fd7ad0e0816d18d80d32c578e5140"
   integrity sha512-GD3gcN+Pr2flmxkt2lm5K86jwX+KRD9QQpNH+wiEQGjBXOzd46+XD5npH1sRByqLYml9rW4klflcrEfNb7dnQw==
@@ -1421,7 +1421,7 @@
     "@handlebars/parser" "^1.1.0"
     simple-html-tokenizer "^0.5.10"
 
-"@glimmer/tracking@^1.0.0", "@glimmer/tracking@^1.0.1", "@glimmer/tracking@^1.0.3":
+"@glimmer/tracking@^1.0.0", "@glimmer/tracking@^1.0.1", "@glimmer/tracking@^1.0.2", "@glimmer/tracking@^1.0.3":
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/@glimmer/tracking/-/tracking-1.0.3.tgz#8b9b42aff6c206edeaaea178a95acc1eff62e61e"
   integrity sha512-21WR13vPdzt1IQ6JmPPAu4szjV9yKdmLHV3nD0MLDj6/EoYv1c2PqpFBBlp++6xW8OnyDa++cQ8OFoQDP+MRpA==
@@ -5278,10 +5278,10 @@ ember-auto-import@^1.10.1, ember-auto-import@^1.5.3:
     walk-sync "^0.3.3"
     webpack "^4.43.0"
 
-ember-basic-dropdown@^3.0.11:
-  version "3.0.11"
-  resolved "https://registry.yarnpkg.com/ember-basic-dropdown/-/ember-basic-dropdown-3.0.11.tgz#d74e931381595678bede7adea91631db3a269aaa"
-  integrity sha512-J6PFb+BGD7Md43ZJo8N2c/y0sgcoG3O1/m488XxVbb20UpIRlGXjw9Zwm8cd2f7xhSefNXsbVWyQHEkl4iXzDg==
+ember-basic-dropdown@^3.0.12:
+  version "3.0.12"
+  resolved "https://registry.yarnpkg.com/ember-basic-dropdown/-/ember-basic-dropdown-3.0.12.tgz#dc9eb1098cec6e1af27402c62cc3c3402e6d5824"
+  integrity sha512-W67UtAWaANCEwwHYTiagfLRlAcn6dC6f0NO0DpJRIZK9iflBzV6nSIkbCuN1lwf6JFRbEGoFj2bV+io0maMCsg==
   dependencies:
     "@ember/render-modifiers" "^1.0.2"
     "@glimmer/component" "^1.0.1"
@@ -5291,6 +5291,7 @@ ember-basic-dropdown@^3.0.11:
     ember-cli-typescript "^3.1.2"
     ember-element-helper "^0.2.0"
     ember-maybe-in-element "^2.0.1"
+    ember-style-modifier "^0.6.0"
     ember-truth-helpers "^2.1.0 || ^3.0.0"
 
 ember-bootstrap@^4.6.2:
@@ -5954,17 +5955,17 @@ ember-popper@^0.11.3:
     fastboot-transform "^0.1.0"
     popper.js "^1.14.1"
 
-ember-power-select@^4.0.6:
-  version "4.0.6"
-  resolved "https://registry.yarnpkg.com/ember-power-select/-/ember-power-select-4.0.6.tgz#52d1a9c8ddb2137d587dc575d4f566818c742655"
-  integrity sha512-qk3yKT7RpcwihrB6COGwRJ3BjXcoj11seOAkZM4a5cPn+kHx5+UC0wqesyuT0Tkynuj0RvHNxUwWb+Z5D6SE4w==
+ember-power-select@^4.1.2:
+  version "4.1.2"
+  resolved "https://registry.yarnpkg.com/ember-power-select/-/ember-power-select-4.1.2.tgz#f19306db7612b440861f23b12a35e4484d3a4203"
+  integrity sha512-Bhr3Gfq1emXbs82+trjiqt2K8tUIZMJ82ZJ5yaKgEsptLGrI/3pZ43PP8ziZEjN/Kfor/H0bfL+JP+5oWh612g==
   dependencies:
-    "@glimmer/component" "^1.0.1"
-    "@glimmer/tracking" "^1.0.0"
+    "@glimmer/component" "^1.0.2"
+    "@glimmer/tracking" "^1.0.2"
     ember-assign-helper "^0.3.0"
-    ember-basic-dropdown "^3.0.11"
-    ember-cli-babel "^7.21.0"
-    ember-cli-htmlbars "^5.2.0"
+    ember-basic-dropdown "^3.0.12"
+    ember-cli-babel "^7.22.1"
+    ember-cli-htmlbars "^5.3.1"
     ember-cli-typescript "^3.1.4"
     ember-concurrency ">=1.0.0 <3"
     ember-concurrency-decorators "^2.0.0"
