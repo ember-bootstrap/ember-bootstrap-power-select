@@ -1,6 +1,6 @@
 {
   "name": "ember-bootstrap-power-select",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "Integrate ember-power-select into your ember-bootstrap forms",
   "keywords": [
     "ember-addon",

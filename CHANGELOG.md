@@ -1,3 +1,12 @@
+## v3.0.1 (2021-02-27)
+
+#### :bug: Bug Fix
+* [#209](https://github.com/kaliber5/ember-bootstrap-power-select/pull/209) Add back `@placeholder` argument ([@lolmaus](https://github.com/lolmaus))
+
+#### Committers: 2
+- Andrey Mikhaylov (lolmaus) ([@lolmaus](https://github.com/lolmaus))
+- [@dependabot-preview[bot]](https://github.com/apps/dependabot-preview)
+
 ## v3.0.0 (2020-09-24)
 
 #### :boom: Breaking Change
