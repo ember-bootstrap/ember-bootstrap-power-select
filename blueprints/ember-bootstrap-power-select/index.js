@@ -11,8 +11,7 @@ const chalk = require('chalk');
 module.exports = {
   description: '',
 
-  normalizeEntityName() {
-  },
+  normalizeEntityName() {},
 
   beforeInstall() {
     let preprocessor = 'none';
@@ -50,7 +49,9 @@ module.exports = {
     }
     if (fs.existsSync(file)) {
       this.ui.writeLine(`Added import statement to ${file}`);
-      return this.insertIntoFile(file, importStatement, { before: '@import "ember-power-select";' });
+      return this.insertIntoFile(file, importStatement, {
+        before: '@import "ember-power-select";',
+      });
     } else {
       this.ui.writeLine(`Created ${file}`);
       return writeFile(file, importStatement);
@@ -64,7 +65,7 @@ module.exports = {
     }
     let file = 'ember-cli-build.js';
     let settings = {
-      theme: 'bootstrap'
+      theme: 'bootstrap',
     };
     let configKey = 'ember-power-select';
 
@@ -79,10 +80,16 @@ module.exports = {
     try {
       let newBuild = build.edit(configKey, settings);
       fs.writeFileSync(file, newBuild.code());
-      this.ui.writeLine(chalk.green(`Added ember-power-select configuration to ${file}`));
-    } catch(error) {
+      this.ui.writeLine(
+        chalk.green(`Added ember-power-select configuration to ${file}`)
+      );
+    } catch (error) {
       let settingsString = JSON.stringify(settings);
-      this.ui.writeLine(chalk.red(`Configuration file could not be edited. Manually update your ${file} to include '${configKey}': ${settingsString}`));
+      this.ui.writeLine(
+        chalk.red(
+          `Configuration file could not be edited. Manually update your ${file} to include '${configKey}': ${settingsString}`
+        )
+      );
     }
-  }
+  },
 };
