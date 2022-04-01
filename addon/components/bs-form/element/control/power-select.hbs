@@ -58,7 +58,7 @@
     ...attributes
     as |item select|
   >
-    {{#if hasBlock}}
+    {{#if (has-block)}}
       {{yield item select}}
     {{else}}
       {{#if @optionLabelPath}}
