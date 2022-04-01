@@ -42,7 +42,7 @@
     @scrollTo={{@scrollTo}}
     @search={{@search}}
     @searchEnabled={{@searchEnabled}}
-    @searchField={{if hasBlock @searchField (if @searchField @searchField @optionLabelPath)}}
+    @searchField={{if (has-block) @searchField (if @searchField @searchField @optionLabelPath)}}
     @searchMessage={{@searchMessage}}
     @searchPlaceholder={{@searchPlaceholder}}
     @selected={{this.value}}

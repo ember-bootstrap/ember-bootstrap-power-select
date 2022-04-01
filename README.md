@@ -12,9 +12,10 @@ Compatibility
 
 * Ember Power Select v4 or above
 * Ember Bootstrap v4 or above
-* Ember.js v3.16 or above
-* Ember CLI v3.15 or above
+* Ember.js v3.24 or above
+* Ember CLI v3.24 or above
 * Node.js v12 or above
+
 
 Installation
 ------------------------------------------------------------------------------
