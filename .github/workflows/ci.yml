@@ -66,6 +66,7 @@ jobs:
           - ember-canary
           - ember-default-with-jquery
           - ember-classic
+          - ember-bootstrap-v4
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
