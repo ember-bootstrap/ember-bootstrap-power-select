@@ -106,6 +106,14 @@ module.exports = async function () {
       },
       embroiderSafe(),
       embroiderOptimized(),
+      {
+        name: 'ember-bootstrap-v4',
+        npm: {
+          devDependencies: {
+            'ember-bootstrap': '^4.9.0',
+          },
+        },
+      },
     ],
   };
 };
