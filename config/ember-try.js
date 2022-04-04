@@ -114,6 +114,14 @@ module.exports = async function () {
           },
         },
       },
+      {
+        name: 'ember-power-select-v4',
+        npm: {
+          devDependencies: {
+            'ember-power-select': '^4.1.7',
+          },
+        },
+      },
     ],
   };
 };
