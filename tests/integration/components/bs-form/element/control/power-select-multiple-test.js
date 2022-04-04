@@ -147,7 +147,7 @@ module(
       // HTML attributes are not applied to any element if `renderInPlace` is `false`
       await render(hbs`
     <BsForm as |form|>
-      <form.element @controlType="power-select-multiple" @property="prop" @options={{(array)}} as |el|>
+      <form.element @controlType="power-select-multiple" @property="prop" as |el|>
         <el.control @renderInPlace={{true}} data-test-foo />
       </form.element>
     </BsForm>`);
