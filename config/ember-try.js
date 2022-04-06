@@ -112,6 +112,17 @@ module.exports = async function () {
           devDependencies: {
             'ember-bootstrap': '^4.9.0',
           },
+          resolutions: {
+            '@embroider/macros': '^0.50.2',
+          },
+        },
+      },
+      {
+        name: 'ember-power-select-v4',
+        npm: {
+          devDependencies: {
+            'ember-power-select': '^4.1.7',
+          },
         },
       },
     ],
