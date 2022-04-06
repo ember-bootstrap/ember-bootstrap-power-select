@@ -123,9 +123,6 @@ module.exports = async function () {
           devDependencies: {
             'ember-power-select': '^4.1.7',
           },
-          resolutions: {
-            '@embroider/macros': '^0.50.2',
-          },
         },
       },
     ],
