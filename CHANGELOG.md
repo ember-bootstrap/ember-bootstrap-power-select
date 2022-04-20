@@ -1,3 +1,25 @@
+
+## v4.0.0 (2022-04-20)
+
+#### :boom: Breaking Change
+* [#303](https://github.com/kaliber5/ember-bootstrap-power-select/pull/303) upgrade ember-auto-import to v2 ([@jelhan](https://github.com/jelhan))
+* [#300](https://github.com/kaliber5/ember-bootstrap-power-select/pull/300) drop support for node 10 ([@jelhan](https://github.com/jelhan))
+
+#### :rocket: Enhancement
+* [#307](https://github.com/kaliber5/ember-bootstrap-power-select/pull/307) support Ember Power Select to v5 ([@jelhan](https://github.com/jelhan))
+* [#306](https://github.com/kaliber5/ember-bootstrap-power-select/pull/306) support Ember Bootstrap v5 ([@jelhan](https://github.com/jelhan))
+
+#### :bug: Bug Fix
+* [#298](https://github.com/kaliber5/ember-bootstrap-power-select/pull/298) Address hasBlock deprecation: update to has-block ([@sacarino](https://github.com/sacarino))
+
+#### :house: Internal
+* [#308](https://github.com/kaliber5/ember-bootstrap-power-select/pull/308) fix patterns not supported by Ember v4 in tests ([@jelhan](https://github.com/jelhan))
+* [#305](https://github.com/kaliber5/ember-bootstrap-power-select/pull/305) Upgrade Ember, Ember CLI and blueprints to 3.28 ([@jelhan](https://github.com/jelhan))
+
+#### Committers: 2
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+- Shane ([@sacarino](https://github.com/sacarino))
+
 ## v3.0.1 (2021-02-27)
 
 #### :bug: Bug Fix
