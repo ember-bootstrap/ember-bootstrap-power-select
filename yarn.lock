@@ -5178,10 +5178,10 @@ ember-auto-import@^2.2.3, ember-auto-import@^2.4.0, ember-auto-import@^2.4.1:
     ember-style-modifier "^0.7.0"
     ember-truth-helpers "^2.1.0 || ^3.0.0"
 
-ember-bootstrap@^5.0.0:
-  version "5.0.0"
-  resolved "https://registry.yarnpkg.com/ember-bootstrap/-/ember-bootstrap-5.0.0.tgz#aa1de391d662cafebe7d715449853ccda9237a0f"
-  integrity sha512-ocH7qJKikxDgLv1prWyYzDaH85of8/l0LeV2bnMCp3/ZdRak/vq4dWqm53hMQ0ifN4llfs1Q1bwlcra/BT7yCA==
+ember-bootstrap@^5.1.0:
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/ember-bootstrap/-/ember-bootstrap-5.1.0.tgz#14c8603c87c9e1108811874ccbd2f65adcecf077"
+  integrity sha512-iIzn4iEY+fR+2gbVod+YFlrRDX2BeSFAOS7niIWHw02oQVxOd3Vjq9rH9f2F/FyZta/dDp5qf4mWlPsCXQg5XQ==
   dependencies:
     "@ember/render-modifiers" "^2.0.0"
     "@embroider/macros" "^1.0.0"
@@ -5207,7 +5207,7 @@ ember-bootstrap@^5.0.0:
     ember-popper-modifier "^2.0.0"
     ember-ref-bucket "^4.0.0"
     ember-render-helpers "^0.2.0"
-    ember-style-modifier "^0.7.0"
+    ember-style-modifier "^0.8.0"
     findup-sync "^5.0.0"
     fs-extra "^10.0.0"
     resolve "^1.18.1"
@@ -5798,6 +5798,17 @@ ember-modifier@^3.0.0, ember-modifier@^3.1.0:
     ember-cli-typescript "^5.0.0"
     ember-compatibility-helpers "^1.2.5"
 
+ember-modifier@^3.2.7:
+  version "3.2.7"
+  resolved "https://registry.yarnpkg.com/ember-modifier/-/ember-modifier-3.2.7.tgz#f2d35b7c867cbfc549e1acd8d8903c5ecd02ea4b"
+  integrity sha512-ezcPQhH8jUfcJQbbHji4/ZG/h0yyj1jRDknfYue/ypQS8fM8LrGcCMo0rjDZLzL1Vd11InjNs3BD7BdxFlzGoA==
+  dependencies:
+    ember-cli-babel "^7.26.6"
+    ember-cli-normalize-entity-name "^1.0.0"
+    ember-cli-string-utils "^1.1.0"
+    ember-cli-typescript "^5.0.0"
+    ember-compatibility-helpers "^1.2.5"
+
 ember-named-blocks-polyfill@^0.2.4:
   version "0.2.5"
   resolved "https://registry.yarnpkg.com/ember-named-blocks-polyfill/-/ember-named-blocks-polyfill-0.2.5.tgz#d5841406277026a221f479c815cfbac6cdcaeecb"
@@ -5960,6 +5971,14 @@ ember-style-modifier@^0.7.0:
   dependencies:
     ember-cli-babel "^7.26.6"
     ember-modifier "^3.0.0"
+
+ember-style-modifier@^0.8.0:
+  version "0.8.0"
+  resolved "https://registry.yarnpkg.com/ember-style-modifier/-/ember-style-modifier-0.8.0.tgz#ef46b3f288e63e3d850418ea8dc6f7b12edde721"
+  integrity sha512-I7M+oZ+poYYOP7n521rYv7kkYZbxotL8VbtHYxLQ3tasRZYQJ21qfu3vVjydSjwyE3w7EZRgKngBoMhKSAEZnw==
+  dependencies:
+    ember-cli-babel "^7.26.6"
+    ember-modifier "^3.2.7"
 
 ember-template-lint@^3.15.0:
   version "3.16.0"
