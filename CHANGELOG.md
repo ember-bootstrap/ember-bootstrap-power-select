@@ -1,4 +1,13 @@
 
+
+## v4.0.1 (2022-05-23)
+
+#### :bug: Bug Fix
+* [#312](https://github.com/kaliber5/ember-bootstrap-power-select/pull/312) Fix for ember-bootstrap v5.1 ([@simonihmig](https://github.com/simonihmig))
+
+#### Committers: 1
+- Simon Ihmig ([@simonihmig](https://github.com/simonihmig))
+
 ## v4.0.0 (2022-04-20)
 
 #### :boom: Breaking Change
