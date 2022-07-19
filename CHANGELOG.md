@@ -1,5 +1,15 @@
 
 
+
+## v4.1.0 (2022-07-19)
+
+#### :bug: Bug Fix
+* [#313](https://github.com/kaliber5/ember-bootstrap-power-select/pull/313) Placeholder argument for power-select-multiple control ([@NLaza](https://github.com/NLaza))
+
+#### Committers: 2
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+- [@NLaza](https://github.com/NLaza)
+
 ## v4.0.1 (2022-05-23)
 
 #### :bug: Bug Fix
