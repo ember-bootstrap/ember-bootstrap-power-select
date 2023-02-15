@@ -1,6 +1,6 @@
 import { module, test } from 'qunit';
 import { setupRenderingTest } from 'ember-qunit';
-import { render, click, find, findAll } from '@ember/test-helpers';
+import { render, click, find, findAll, triggerKeyEvent } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { clickTrigger } from 'ember-power-select/test-support/helpers';
 
@@ -112,13 +112,20 @@ module(
     });
 
     test('it passes power-select options', async function (assert) {
+      let lastKeyPress = null;
+      this.set('onKeydown', function (select, event) {
+        lastKeyPress = event.keyCode;
+        return true;
+      });
       await render(hbs`
     <BsForm as |form|>
       <form.element @controlType="power-select" @property="prop2" @options={{this.options}} @placeholder="something" as |el|>
-        <el.control @searchEnabled={{false}} @triggerClass="form-control" />
+        <el.control @onKeydown={{this.onKeydown}} @searchEnabled={{false}} @triggerClass="form-control" />
       </form.element>
     </BsForm>`);
       assert.dom('.form-control').exists();
+      await triggerKeyEvent('.form-control', 'keydown', 'X');
+      assert.strictEqual(lastKeyPress, 88);
       await clickTrigger();
       assert.dom('.ember-power-select-search-input').doesNotExist();
     });
