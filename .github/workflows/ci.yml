@@ -22,7 +22,7 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 14
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Lint
@@ -41,7 +41,7 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 14
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
         with:
@@ -75,7 +75,7 @@ jobs:
       - name: Setup node.js
         uses: actions/setup-node@v3
         with:
-          node-version: 12
+          node-version: 14
       - name: Install dependencies
         uses: bahmutov/npm-install@v1
       - name: Test
