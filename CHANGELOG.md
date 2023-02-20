@@ -1,6 +1,28 @@
 
 
 
+
+## v5.0.0-0 (2023-02-20)
+
+#### :boom: Breaking Change
+* [#354](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/354) explicitly declare peer depencencies on ember-bootstrap, ember-power-select and ember-source ([@jelhan](https://github.com/jelhan))
+* [#353](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/353) drop support for ember-power-select v4 and v5 ([@jelhan](https://github.com/jelhan))
+* [#352](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/352) drop support for Ember Bootstrap v4 ([@jelhan](https://github.com/jelhan))
+* [#351](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/351) drop support for node 12 ([@jelhan](https://github.com/jelhan))
+* [#350](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/350) drop support for Ember < 3.28 ([@jelhan](https://github.com/jelhan))
+
+#### :bug: Bug Fix
+* [#346](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/346) Support Power Select's onKeydown argument ([@jmmorganMSTS](https://github.com/jmmorganMSTS))
+
+#### :house: Internal
+* [#361](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/361) upgrade blueprint files to Ember CLI 4.10 ([@jelhan](https://github.com/jelhan))
+* [#360](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/360) remove test scenario for Ember with jQuery ([@jelhan](https://github.com/jelhan))
+* [#349](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/349) refactor to template-only components ([@jelhan](https://github.com/jelhan))
+
+#### Committers: 2
+- James M. Morgan ([@jmmorganMSTS](https://github.com/jmmorganMSTS))
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+
 ## v4.1.0 (2022-07-19)
 
 #### :bug: Bug Fix
