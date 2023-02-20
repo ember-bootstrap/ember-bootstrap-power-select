@@ -28,7 +28,7 @@ module(
       assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
       assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
       await click(findAll('.ember-power-select-option')[1]);
-      assert.equal(this.model.prop, 'bar');
+      assert.strictEqual(this.model.prop, 'bar');
     });
 
     test('it renders as blockless control component', async function (assert) {
@@ -45,7 +45,7 @@ module(
       assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
       assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
       await click(findAll('.ember-power-select-option')[1]);
-      assert.equal(this.model.prop, 'bar');
+      assert.strictEqual(this.model.prop, 'bar');
     });
 
     test('it renders as block control component', async function (assert) {
@@ -64,7 +64,7 @@ module(
       assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
       assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
       await click(findAll('.ember-power-select-option')[1]);
-      assert.equal(this.model.prop, 'bar');
+      assert.strictEqual(this.model.prop, 'bar');
     });
 
     test('it can disable select', async function (assert) {
@@ -108,7 +108,7 @@ module(
       assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
       assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
       await click(findAll('.ember-power-select-option')[1]);
-      assert.equal(this.model.prop, this.options[1]);
+      assert.strictEqual(this.model.prop, this.options[1]);
     });
 
     test('it passes power-select options', async function (assert) {

@@ -22,7 +22,7 @@ module(
       <form.element @controlType="power-select-multiple" @property="prop" @options={{this.options}} />
     </BsForm>`);
       assert.dom('.ember-power-select-trigger').exists({ count: 1 });
-      assert.equal(
+      assert.strictEqual(
         find('.ember-power-select-multiple-options')
           .textContent.replace('×', '')
           .trim(),
@@ -44,7 +44,7 @@ module(
       </form.element>
     </BsForm>`);
       assert.dom('.ember-power-select-trigger').exists({ count: 1 });
-      assert.equal(
+      assert.strictEqual(
         find('.ember-power-select-multiple-option')
           .textContent.replace('×', '')
           .trim(),
@@ -68,7 +68,7 @@ module(
       </form.element>
     </BsForm>`);
       assert.dom('.ember-power-select-trigger').exists({ count: 1 });
-      assert.equal(
+      assert.strictEqual(
         find('.ember-power-select-multiple-option')
           .textContent.replace('×', '')
           .trim(),
@@ -117,7 +117,7 @@ module(
       <form.element @controlType="power-select-multiple" @property="prop" @options={{this.options}} @optionLabelPath="title" />
     </BsForm>`);
       assert.dom('.ember-power-select-trigger').exists({ count: 1 });
-      assert.equal(
+      assert.strictEqual(
         find('.ember-power-select-multiple-option')
           .textContent.replace('×', '')
           .trim(),
