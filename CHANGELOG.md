@@ -2,6 +2,11 @@
 
 
 
+## v5.0.0 (2023-02-24)
+
+Releasing latest RC (v5.0.0-0) as stable version. Please find details in release notes for that release.
+
+
 ## v5.0.0-0 (2023-02-20)
 
 #### :boom: Breaking Change
