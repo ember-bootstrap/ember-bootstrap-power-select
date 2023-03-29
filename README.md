@@ -77,7 +77,7 @@ action are already wired up to the controlling `form.element` for you. Set any o
 ```hbs
 <BsForm @model={{yourModel}} as |form|>
   <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} as |el|>
-    <el.control @searchPlaceholder="Type your name" />
+    <el.control @searchEnabled={{true}} @searchPlaceholder="Type your name" />
   </form.element>
 </BsForm>
 ```
