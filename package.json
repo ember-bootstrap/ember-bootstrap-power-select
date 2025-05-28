@@ -31,9 +31,7 @@
     "chalk": "^5.0.0",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-build-config-editor": "^0.5.0",
-    "ember-cli-htmlbars": "^6.2.0",
-    "fs-extra": "^11.0.0",
-    "rsvp": "^4.0.1"
+    "ember-cli-htmlbars": "^6.2.0"
   },
   "devDependencies": {
     "@ember/optional-features": "2.0.0",
