@@ -24,6 +24,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - name: Install Node
         uses: actions/setup-node@v3
         with:
@@ -43,6 +46,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - uses: actions/setup-node@v3
         with:
           node-version: 20.x
@@ -75,6 +81,9 @@ jobs:
 
     steps:
       - uses: actions/checkout@v3
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 9
       - name: Install Node
         uses: actions/setup-node@v3
         with:
