@@ -41,7 +41,7 @@
     "@embroider/test-setup": "2.1.1",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
-    "babel-eslint": "10.1.0",
+    "@babel/eslint-parser": "7.11.0",
     "bootstrap": "5.2.3",
     "broccoli-asset-rev": "3.0.0",
     "concurrently": "8.0.1",
