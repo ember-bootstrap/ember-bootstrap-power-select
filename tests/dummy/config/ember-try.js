@@ -81,6 +81,14 @@ module.exports = async function () {
           },
         },
       },
+      {
+        name: 'ember-power-select-v7',
+        npm: {
+          devDependencies: {
+            'ember-power-select': '^7.0.0',
+          },
+        },
+      },
       embroiderSafe(),
       embroiderOptimized(),
     ],

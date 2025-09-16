@@ -70,6 +70,7 @@ jobs:
           - ember-canary
           - ember-classic
           - ember-power-select-v6
+          - ember-power-select-v7
           # - embroider-safe
           # - embroider-optimized
 
