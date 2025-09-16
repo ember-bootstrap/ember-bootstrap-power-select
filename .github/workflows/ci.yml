@@ -97,6 +97,7 @@ jobs:
   blueprint:
     name: "Blueprint"
     runs-on: ubuntu-latest
+    needs: "test"
     timeout-minutes: 10
 
     steps:
