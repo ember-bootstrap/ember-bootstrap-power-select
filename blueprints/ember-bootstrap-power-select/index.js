@@ -1,10 +1,9 @@
 /* eslint-env node */
 'use strict';
 
-const rsvp = require('rsvp');
-const fs = require('fs-extra');
+const fs = require('node:fs');
+const fsPromises = require('node:fs/promises');
 const path = require('path');
-const writeFile = rsvp.denodeify(fs.writeFile);
 const BuildConfigEditor = require('ember-cli-build-config-editor');
 const chalk = require('chalk');
 
@@ -54,7 +53,7 @@ module.exports = {
       });
     } else {
       this.ui.writeLine(`Created ${file}`);
-      return writeFile(file, importStatement);
+      return fsPromises.writeFile(file, importStatement);
     }
   },
 

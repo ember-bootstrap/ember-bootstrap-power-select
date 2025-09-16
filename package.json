@@ -25,15 +25,14 @@
     "start": "ember server",
     "test": "concurrently \"npm:lint\" \"npm:test:*\" --names \"lint,test:\"",
     "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each"
+    "test:ember-compatibility": "ember try:each",
+    "test:blueprint": "mocha node-tests --recursive"
   },
   "dependencies": {
-    "chalk": "^5.0.0",
+    "chalk": "^4.1.2",
     "ember-cli-babel": "^7.26.11",
     "ember-cli-build-config-editor": "^0.5.0",
-    "ember-cli-htmlbars": "^6.2.0",
-    "fs-extra": "^11.0.0",
-    "rsvp": "^4.0.1"
+    "ember-cli-htmlbars": "^6.2.0"
   },
   "devDependencies": {
     "@ember/optional-features": "2.0.0",
@@ -49,6 +48,7 @@
     "ember-auto-import": "2.6.3",
     "ember-bootstrap": "5.1.1",
     "ember-cli": "4.12.1",
+    "ember-cli-blueprint-test-helpers": "^0.19.2",
     "ember-cli-dependency-checker": "3.3.1",
     "ember-cli-inject-live-reload": "2.1.0",
     "ember-cli-sri": "2.1.1",
@@ -69,6 +69,7 @@
     "eslint-plugin-prettier": "4.2.1",
     "eslint-plugin-qunit": "7.3.4",
     "loader.js": "4.7.0",
+    "mocha": "^5.0.0",
     "prettier": "2.8.8",
     "qunit": "2.19.4",
     "qunit-dom": "2.0.0",
