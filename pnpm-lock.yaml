@@ -61,7 +61,7 @@ importers:
         specifier: 4.12.3
         version: 4.12.3(@types/node@24.5.0)(handlebars@4.7.8)(underscore@1.13.7)
       ember-cli-blueprint-test-helpers:
-        specifier: ^0.19.2
+        specifier: 0.19.2
         version: 0.19.2
       ember-cli-dependency-checker:
         specifier: 3.3.3
@@ -124,7 +124,7 @@ importers:
         specifier: 4.7.0
         version: 4.7.0
       mocha:
-        specifier: ^5.0.0
+        specifier: 5.2.0
         version: 5.2.0
       prettier:
         specifier: 2.8.8
@@ -11753,7 +11753,7 @@ snapshots:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.4
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
 
