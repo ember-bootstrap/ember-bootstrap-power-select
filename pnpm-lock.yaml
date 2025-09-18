@@ -79,8 +79,8 @@ importers:
         specifier: 2.1.2
         version: 2.1.2(@babel/core@7.28.4)
       ember-page-title:
-        specifier: 7.0.0
-        version: 7.0.0
+        specifier: 9.0.3
+        version: 9.0.3
       ember-power-select:
         specifier: 7.2.0
         version: 7.2.0(@babel/core@7.28.4)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))(webpack@5.94.0)
@@ -1031,6 +1031,9 @@ packages:
 
   '@popperjs/core@2.11.8':
     resolution: {integrity: sha512-P1st0aksCrn9sGZhp8GMYwBnQsbvAWsZAX44oXNNvLHGqAOcoVxmjZiohstwQ7SqKnbR47akdNi+uleWD8+g6A==}
+
+  '@simple-dom/document@1.4.0':
+    resolution: {integrity: sha512-/RUeVH4kuD3rzo5/91+h4Z1meLSLP66eXqpVAw/4aZmYozkeqUkMprq0znL4psX/adEed5cBgiNJcfMz/eKZLg==}
 
   '@simple-dom/interface@1.4.0':
     resolution: {integrity: sha512-l5qumKFWU0S+4ZzMaLXFU8tQZsicHEMEyAxI5kDFGhJsRqDwe0a7/iPA/GdxlGyDKseQQAgIz5kzU7eXTrlSpA==}
@@ -2879,9 +2882,9 @@ packages:
     resolution: {integrity: sha512-jjafBnWfoA4VSSje476ft5G+urlvvuSDddwAJjKDCjKY9mbe3hAEsJiMBAaPObJRMm1FOglCuKjQZfwDDls6MQ==}
     engines: {node: 8.* || >= 10.*}
 
-  ember-page-title@7.0.0:
-    resolution: {integrity: sha512-oq6+HYbeVD/BnxIO5AkP4gWlsatdgW2HFO10F8+XQiJZrwa7cC7Wm54JNGqQkavkDQTgNSiy1Fe2NILJ14MmAg==}
-    engines: {node: 12.* || 14.* || >= 16}
+  ember-page-title@9.0.3:
+    resolution: {integrity: sha512-fedRHUsvq8tIZgOii8jTrfAyeq+la/9H5eAzhNNwEyzo7nDMmqK2SxsyBUGXprd8fOacsPabLlzlucMi/4mUpA==}
+    engines: {node: 16.* || >= 18}
 
   ember-popper-modifier@2.0.1:
     resolution: {integrity: sha512-NczO1m4uDFs4f4L8VEoC5MmRSZZvpTGwCWunYXQ+5vuWKIJ2KnPJQ3cRp9a1EpsWrfPwss+sB4JAEsY24ffdDA==}
@@ -8069,6 +8072,10 @@ snapshots:
 
   '@popperjs/core@2.11.8': {}
 
+  '@simple-dom/document@1.4.0':
+    dependencies:
+      '@simple-dom/interface': 1.4.0
+
   '@simple-dom/interface@1.4.0': {}
 
   '@sindresorhus/is@0.14.0': {}
@@ -10660,9 +10667,10 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-page-title@7.0.0:
+  ember-page-title@9.0.3:
     dependencies:
-      ember-cli-babel: 7.26.11
+      '@embroider/addon-shim': 1.10.0
+      '@simple-dom/document': 1.4.0
     transitivePeerDependencies:
       - supports-color
 
