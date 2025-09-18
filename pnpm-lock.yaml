@@ -25,8 +25,8 @@ importers:
         specifier: 2.2.0
         version: 2.2.0
       '@ember/string':
-        specifier: 3.1.1
-        version: 3.1.1
+        specifier: 4.0.1
+        version: 4.0.1
       '@ember/test-helpers':
         specifier: 2.9.6
         version: 2.9.6(@babel/core@7.28.4)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))
@@ -89,7 +89,7 @@ importers:
         version: 6.2.0(@ember/test-helpers@2.9.6(@babel/core@7.28.4)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0)))(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))(qunit@2.19.4)(webpack@5.94.0)
       ember-resolver:
         specifier: 10.1.1
-        version: 10.1.1(@ember/string@3.1.1)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))
+        version: 10.1.1(@ember/string@4.0.1)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))
       ember-source:
         specifier: 4.12.4
         version: 4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0)
@@ -767,6 +767,9 @@ packages:
   '@ember/string@3.1.1':
     resolution: {integrity: sha512-UbXJ+k3QOrYN4SRPHgXCqYIJ+yWWUg1+vr0H4DhdQPTy8LJfyqwZ2tc5uqpSSnEXE+/1KopHBE5J8GDagAg5cg==}
     engines: {node: 12.* || 14.* || >= 16}
+
+  '@ember/string@4.0.1':
+    resolution: {integrity: sha512-VWeng8BSWrIsdPfffOQt/bKwNKJL7+37gPFh/6iZZ9bke+S83kKqkS30poo4bTGfRcMnvAE0ie7txom+iDu81Q==}
 
   '@ember/test-helpers@2.9.6':
     resolution: {integrity: sha512-wUBB8e5nF24XSkl0TlRhHLs+WSf6yHimxDzo7L+a5n7mN5/omEdRkXMlm1qEp8N4+GNWfJKPHg9JTTm+9DA6uw==}
@@ -7646,6 +7649,8 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
+  '@ember/string@4.0.1': {}
+
   '@ember/test-helpers@2.9.6(@babel/core@7.28.4)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))':
     dependencies:
       '@ember/test-waiters': 3.1.0
@@ -10641,9 +10646,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-resolver@10.1.1(@ember/string@3.1.1)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0)):
+  ember-resolver@10.1.1(@ember/string@4.0.1)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0)):
     dependencies:
-      '@ember/string': 3.1.1
+      '@ember/string': 4.0.1
       ember-cli-babel: 7.26.11
     optionalDependencies:
       ember-source: 4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0)
