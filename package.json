@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "chalk": "^4.1.2",
-    "ember-cli-babel": "^7.26.11",
+    "ember-cli-babel": "^8.0.0",
     "ember-cli-build-config-editor": "^0.5.0",
     "ember-cli-htmlbars": "^6.2.0"
   },
