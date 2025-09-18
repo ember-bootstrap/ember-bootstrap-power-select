@@ -45,7 +45,7 @@
     "bootstrap": "5.3.8",
     "broccoli-asset-rev": "3.0.0",
     "concurrently": "8.2.2",
-    "ember-auto-import": "2.6.3",
+    "ember-auto-import": "2.10.0",
     "ember-bootstrap": "5.1.1",
     "ember-cli": "4.12.3",
     "ember-cli-blueprint-test-helpers": "0.19.2",

@@ -52,8 +52,8 @@ importers:
         specifier: 8.2.2
         version: 8.2.2
       ember-auto-import:
-        specifier: 2.6.3
-        version: 2.6.3(webpack@5.94.0)
+        specifier: 2.10.0
+        version: 2.10.0(webpack@5.94.0)
       ember-bootstrap:
         specifier: 5.1.1
         version: 5.1.1(@babel/core@7.28.4)(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))(webpack@5.94.0)
@@ -2660,8 +2660,8 @@ packages:
     resolution: {integrity: sha512-GKHhT4HD2fhtDnuBk6eCdCA8XGew9hY7TVs8zjrykegiI7weC0CGtpJscmIG3O0gEEb0d07UTkF2pjfNGLx4Nw==}
     engines: {node: '>= 12'}
 
-  ember-auto-import@2.6.3:
-    resolution: {integrity: sha512-uLhrRDJYWCRvQ4JQ1e64XlSrqAKSd6PXaJ9ZsZI6Tlms9T4DtQFxNXasqji2ZRJBVrxEoLCRYX3RTldsQ0vNGQ==}
+  ember-auto-import@2.10.0:
+    resolution: {integrity: sha512-bcBFDYVTFHyqyq8BNvsj6UO3pE6Uqou/cNmee0WaqBgZ+1nQqFz0UE26usrtnFAT+YaFZSkqF2H36QW84k0/cg==}
     engines: {node: 12.* || 14.* || >= 16}
 
   ember-basic-dropdown@7.3.0:
@@ -9869,11 +9869,13 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-auto-import@2.6.3(webpack@5.94.0):
+  ember-auto-import@2.10.0(webpack@5.94.0):
     dependencies:
       '@babel/core': 7.28.4
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.28.4)
       '@babel/plugin-proposal-decorators': 7.28.0(@babel/core@7.28.4)
+      '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.28.4)
+      '@babel/plugin-transform-class-static-block': 7.28.3(@babel/core@7.28.4)
       '@babel/preset-env': 7.28.3(@babel/core@7.28.4)
       '@embroider/macros': 1.18.1
       '@embroider/shared-internals': 2.9.1
@@ -9892,10 +9894,13 @@ snapshots:
       fs-extra: 10.1.0
       fs-tree-diff: 2.0.1
       handlebars: 4.7.8
+      is-subdir: 1.2.0
       js-string-escape: 1.0.1
       lodash: 4.17.21
       mini-css-extract-plugin: 2.9.4(webpack@5.94.0)
+      minimatch: 3.1.2
       parse5: 6.0.1
+      pkg-entry-points: 1.1.1
       resolve: 1.22.10
       resolve-package-path: 4.0.3
       semver: 7.7.2
@@ -9913,7 +9918,7 @@ snapshots:
       '@embroider/util': 1.13.4(ember-source@4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0))
       '@glimmer/component': 1.1.2(@babel/core@7.28.4)
       '@glimmer/tracking': 1.1.2
-      ember-auto-import: 2.6.3(webpack@5.94.0)
+      ember-auto-import: 2.10.0(webpack@5.94.0)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
       ember-cli-typescript: 5.3.0
@@ -9943,7 +9948,7 @@ snapshots:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
       chalk: 4.1.2
-      ember-auto-import: 2.6.3(webpack@5.94.0)
+      ember-auto-import: 2.10.0(webpack@5.94.0)
       ember-cli-babel: 7.26.11
       ember-cli-build-config-editor: 0.5.1
       ember-cli-htmlbars: 6.3.0
@@ -10573,7 +10578,7 @@ snapshots:
   ember-popper-modifier@2.0.1(@babel/core@7.28.4)(webpack@5.94.0):
     dependencies:
       '@popperjs/core': 2.11.8
-      ember-auto-import: 2.6.3(webpack@5.94.0)
+      ember-auto-import: 2.10.0(webpack@5.94.0)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
       ember-modifier: 3.2.7(@babel/core@7.28.4)
@@ -10611,7 +10616,7 @@ snapshots:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 3.0.2
       common-tags: 1.8.2
-      ember-auto-import: 2.6.3(webpack@5.94.0)
+      ember-auto-import: 2.10.0(webpack@5.94.0)
       ember-cli-babel: 7.26.11
       ember-cli-test-loader: 3.1.0
       ember-source: 4.12.4(@babel/core@7.28.4)(@glimmer/component@1.1.2(@babel/core@7.28.4))(webpack@5.94.0)
@@ -10681,7 +10686,7 @@ snapshots:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
       chalk: 4.1.2
-      ember-auto-import: 2.6.3(webpack@5.94.0)
+      ember-auto-import: 2.10.0(webpack@5.94.0)
       ember-cli-babel: 7.26.11
       ember-cli-get-component-path-option: 1.0.0
       ember-cli-is-package-missing: 1.0.0
@@ -10712,7 +10717,7 @@ snapshots:
   ember-style-modifier@3.1.1(@babel/core@7.28.4)(@ember/string@3.1.1)(webpack@5.94.0):
     dependencies:
       '@ember/string': 3.1.1
-      ember-auto-import: 2.6.3(webpack@5.94.0)
+      ember-auto-import: 2.10.0(webpack@5.94.0)
       ember-cli-babel: 7.26.11
       ember-modifier: 4.2.2(@babel/core@7.28.4)
     transitivePeerDependencies:
@@ -11748,7 +11753,7 @@ snapshots:
       fs.realpath: 1.0.0
       inflight: 1.0.6
       inherits: 2.0.4
-      minimatch: 3.0.4
+      minimatch: 3.1.2
       once: 1.4.0
       path-is-absolute: 1.0.1
 
@@ -13577,7 +13582,7 @@ snapshots:
       got: 12.6.1
       registry-auth-token: 5.1.0
       registry-url: 6.0.1
-      semver: 7.5.1
+      semver: 7.7.2
 
   parent-module@1.0.1:
     dependencies:
@@ -14239,7 +14244,7 @@ snapshots:
 
   semver-diff@4.0.0:
     dependencies:
-      semver: 7.5.1
+      semver: 7.7.2
 
   semver@5.7.2: {}
 
@@ -15133,7 +15138,7 @@ snapshots:
       is-yarn-global: 0.4.1
       latest-version: 7.0.0
       pupa: 3.3.0
-      semver: 7.5.1
+      semver: 7.7.2
       semver-diff: 4.0.0
       xdg-basedir: 5.1.0
 
