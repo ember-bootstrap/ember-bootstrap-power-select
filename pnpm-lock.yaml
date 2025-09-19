@@ -136,11 +136,11 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
       release-it:
-        specifier: 15.10.5
-        version: 15.10.5(encoding@0.1.13)
+        specifier: 15.11.0
+        version: 15.11.0(encoding@0.1.13)
       release-it-lerna-changelog:
         specifier: 5.0.0
-        version: 5.0.0(release-it@15.10.5(encoding@0.1.13))
+        version: 5.0.0(release-it@15.11.0(encoding@0.1.13))
       webpack:
         specifier: 5.94.0
         version: 5.94.0
@@ -5653,8 +5653,8 @@ packages:
     peerDependencies:
       release-it: ^14.0.0 || ^15.1.3
 
-  release-it@15.10.5:
-    resolution: {integrity: sha512-6AWkcOYsEfCzegtAKvXekUG+CLjlFXztDwGzxFOGa8VJRuXbPONfM8rvaPYJX1hTlL5+KC4MWOEoKKzWhQ65gA==}
+  release-it@15.11.0:
+    resolution: {integrity: sha512-lZwoGEnKYKwGnfxxlA7vtR7vvozPrOSsIgQaHO4bgQ5ARbG3IA6Dmo0IVusv6nR1KmnjH70QIeNAgsWs6Ji/tw==}
     engines: {node: '>=14.9'}
     hasBin: true
 
@@ -8134,7 +8134,7 @@ snapshots:
 
   '@types/glob@9.0.0':
     dependencies:
-      glob: 8.1.0
+      glob: 9.3.5
 
   '@types/http-cache-semantics@4.0.4': {}
 
@@ -14053,13 +14053,13 @@ snapshots:
     dependencies:
       jsesc: 3.0.2
 
-  release-it-lerna-changelog@5.0.0(release-it@15.10.5(encoding@0.1.13)):
+  release-it-lerna-changelog@5.0.0(release-it@15.11.0(encoding@0.1.13)):
     dependencies:
       execa: 5.1.1
       lerna-changelog: 2.2.0
       lodash.template: 4.5.0
       mdast-util-from-markdown: 1.3.1
-      release-it: 15.10.5(encoding@0.1.13)
+      release-it: 15.11.0(encoding@0.1.13)
       tmp: 0.2.5
       validate-peer-dependencies: 2.2.0
       which: 2.0.2
@@ -14067,7 +14067,7 @@ snapshots:
       - bluebird
       - supports-color
 
-  release-it@15.10.5(encoding@0.1.13):
+  release-it@15.11.0(encoding@0.1.13):
     dependencies:
       '@iarna/toml': 2.2.5
       '@octokit/rest': 19.0.11(encoding@0.1.13)
