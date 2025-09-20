@@ -66,7 +66,7 @@ module.exports = async function () {
           }),
           devDependencies: {
             'ember-bootstrap': '^5.0.0',
-          }
+          },
         },
         npm: {
           devDependencies: {
