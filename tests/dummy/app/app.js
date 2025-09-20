@@ -2,7 +2,10 @@ import Application from '@ember/application';
 import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from 'dummy/config/environment';
-import 'ember-power-select/styles';
+
+// TODO: Fix dummy app styles in ember-power-select v8 without
+//       breaking test scenarios for ember-power-select v7 and v6
+// import 'ember-power-select/styles';
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;
