@@ -127,8 +127,8 @@ importers:
         specifier: 5.5.4
         version: 5.5.4(@types/eslint@8.56.12)(eslint-config-prettier@10.1.8(eslint@7.32.0))(eslint@7.32.0)(prettier@2.8.8)
       eslint-plugin-qunit:
-        specifier: 7.3.4
-        version: 7.3.4(eslint@7.32.0)
+        specifier: 8.2.5
+        version: 8.2.5(eslint@7.32.0)
       loader.js:
         specifier: 4.7.0
         version: 4.7.0
@@ -3204,9 +3204,9 @@ packages:
       eslint-config-prettier:
         optional: true
 
-  eslint-plugin-qunit@7.3.4:
-    resolution: {integrity: sha512-EbDM0zJerH9zVdUswMJpcFF7wrrpvsGuYfNexUpa5hZkkdFhaFcX+yD+RSK4Nrauw4psMGlcqeWUMhaVo+Manw==}
-    engines: {node: 12.x || 14.x || >=16.0.0}
+  eslint-plugin-qunit@8.2.5:
+    resolution: {integrity: sha512-qr7RJCYImKQjB+39q4q46i1l7p1V3joHzBE5CAYfxn5tfVFjrnjn/tw7q/kDyweU9kAIcLul0Dx/KWVUCb3BgA==}
+    engines: {node: ^16.0.0 || ^18.0.0 || >=20.0.0}
 
   eslint-scope@5.1.1:
     resolution: {integrity: sha512-2NxwbF/hZ0KpepYN0cNbo+FN6XoK7GaHlQhgx/hIZl6Va0bF45RQOOwhLIy8lQDbuCiadSLCBnH2CFYquit5bw==}
@@ -11253,7 +11253,7 @@ snapshots:
       '@types/eslint': 8.56.12
       eslint-config-prettier: 10.1.8(eslint@7.32.0)
 
-  eslint-plugin-qunit@7.3.4(eslint@7.32.0):
+  eslint-plugin-qunit@8.2.5(eslint@7.32.0):
     dependencies:
       eslint-utils: 3.0.0(eslint@7.32.0)
       requireindex: 1.2.0
