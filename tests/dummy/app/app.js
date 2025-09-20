@@ -2,10 +2,11 @@ import Application from '@ember/application';
 import Resolver from 'ember-resolver';
 import loadInitializers from 'ember-load-initializers';
 import config from 'dummy/config/environment';
+import { dependencySatisfies, importSync, macroCondition } from '@embroider/macros';
 
-// TODO: Fix dummy app styles in ember-power-select v8 without
-//       breaking test scenarios for ember-power-select v7 and v6
-// import 'ember-power-select/styles';
+if (macroCondition(dependencySatisfies('ember-power-select', '>= 8.0.0'))) {
+  importSync('ember-power-select/themes/bootstrap');
+}
 
 export default class App extends Application {
   modulePrefix = config.modulePrefix;
