@@ -11,6 +11,7 @@ module.exports = async function () {
         name: 'ember-lts-3.28',
         npm: {
           devDependencies: {
+            'ember-bootstrap': '^5.0.0',
             'ember-source': '~3.28.0',
           },
         },
@@ -63,6 +64,9 @@ module.exports = async function () {
             'default-async-observers': false,
             'template-only-glimmer-components': false,
           }),
+          devDependencies: {
+            'ember-bootstrap': '^5.0.0',
+          }
         },
         npm: {
           devDependencies: {
