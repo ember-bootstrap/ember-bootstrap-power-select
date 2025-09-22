@@ -46,7 +46,7 @@
     "@embroider/test-setup": "4.0.0",
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
-    "@release-it-plugins/lerna-changelog": "^8.0.1",
+    "@release-it-plugins/lerna-changelog": "8.0.1",
     "bootstrap": "5.3.8",
     "broccoli-asset-rev": "3.0.0",
     "concurrently": "9.2.1",
