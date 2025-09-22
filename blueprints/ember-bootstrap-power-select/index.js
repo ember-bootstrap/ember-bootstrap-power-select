@@ -80,14 +80,14 @@ module.exports = {
       let newBuild = build.edit(configKey, settings);
       fs.writeFileSync(file, newBuild.code());
       this.ui.writeLine(
-        chalk.green(`Added ember-power-select configuration to ${file}`)
+        chalk.green(`Added ember-power-select configuration to ${file}`),
       );
     } catch (error) {
       let settingsString = JSON.stringify(settings);
       this.ui.writeLine(
         chalk.red(
-          `Configuration file could not be edited. Manually update your ${file} to include '${configKey}': ${settingsString}`
-        )
+          `Configuration file could not be edited. Manually update your ${file} to include '${configKey}': ${settingsString}`,
+        ),
       );
     }
   },

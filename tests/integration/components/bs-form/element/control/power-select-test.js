@@ -79,7 +79,7 @@ module(
       <form.element @controlType="power-select" @property="prop" @options={{this.options}} />
     </BsForm>`);
       assert.ok(
-        find('.ember-power-select-trigger').getAttribute('aria-disabled')
+        find('.ember-power-select-trigger').getAttribute('aria-disabled'),
       );
 
       await render(hbs`
@@ -91,14 +91,14 @@ module(
       </form.element>
     </BsForm>`);
       assert.ok(
-        find('.ember-power-select-trigger').getAttribute('aria-disabled')
+        find('.ember-power-select-trigger').getAttribute('aria-disabled'),
       );
     });
 
     test('it can render array of objects with objectLabelPath', async function (assert) {
       this.set(
         'options',
-        this.options.map((title) => ({ title }))
+        this.options.map((title) => ({ title })),
       );
       this.set('model', {
         prop: this.options[0],
@@ -146,5 +146,5 @@ module(
     </BsForm>`);
       assert.dom('[data-test-foo]').exists();
     });
-  }
+  },
 );
