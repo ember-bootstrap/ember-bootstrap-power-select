@@ -9,12 +9,11 @@ forms.
 
 ## Compatibility
 
-* Ember Power Select v6 or above
-* Ember Bootstrap v5 or above
-* Ember.js v3.28 or above
-* Ember CLI v3.28 or above
-* Node.js v20 or above
-
+- Ember Power Select v6 or above
+- Ember Bootstrap v5 or above
+- Ember.js v3.28 or above
+- Ember CLI v3.28 or above
+- Node.js v20 or above
 
 ## Installation
 
@@ -24,7 +23,7 @@ ember install ember-bootstrap-power-select
 
 This will additionally install `ember-power-select` into your app, and setup its
 Bootstrap theme, either by importing the appropriate Less or Sass file (if you use one of these preprocessors), or by
-editing your `ember-cli-build.js` to include the static theme CSS (if you use plain CSS). 
+editing your `ember-cli-build.js` to include the static theme CSS (if you use plain CSS).
 
 ## Usage
 
@@ -33,7 +32,12 @@ set the array of selectable options:
 
 ```hbs
 <BsForm @model={{yourModel}} as |form|>
-  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} />
+  <form.element
+    @controlType="power-select"
+    @property="foo"
+    @label="Choose"
+    @options={{options}}
+  />
 </BsForm>
 ```
 
@@ -42,7 +46,13 @@ options label:
 
 ```hbs
 <BsForm @model={{yourModel}} as |form|>
-  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} @optionLabelPath="title" />
+  <form.element
+    @controlType="power-select"
+    @property="foo"
+    @label="Choose"
+    @options={{options}}
+    @optionLabelPath="title"
+  />
 </BsForm>
 ```
 
@@ -50,9 +60,17 @@ If you need more control over how the options label are rendered (e.g. for forma
 
 ```hbs
 <BsForm @model={{yourModel}} as |form|>
-  <form.element @controlType="power-select" @property="author" @label="Author" @options={{options}} as |el|>
+  <form.element
+    @controlType="power-select"
+    @property="author"
+    @label="Author"
+    @options={{options}}
+    as |el|
+  >
     <el.control as |option|>
-      {{option.name}} (b. {{format-date option.dayOfBirth}})
+      {{option.name}}
+      (b.
+      {{format-date option.dayOfBirth}})
     </el.control>
   </form.element>
 </BsForm>
@@ -64,7 +82,12 @@ The `power-select-multiple` is also supported and works similarly to the `power-
 
 ```hbs
 <BsForm @model={{yourModel}} as |form|>
-  <form.element @controlType="power-select-multiple" @property="foo" @label="Choose" @options={{options}} />
+  <form.element
+    @controlType="power-select-multiple"
+    @property="foo"
+    @label="Choose"
+    @options={{options}}
+  />
 </BsForm>
 ```
 
@@ -76,7 +99,13 @@ action are already wired up to the controlling `form.element` for you. Set any o
 
 ```hbs
 <BsForm @model={{yourModel}} as |form|>
-  <form.element @controlType="power-select" @property="foo" @label="Choose" @options={{options}} as |el|>
+  <form.element
+    @controlType="power-select"
+    @property="foo"
+    @label="Choose"
+    @options={{options}}
+    as |el|
+  >
     <el.control @searchEnabled={{true}} @searchPlaceholder="Type your name" />
   </form.element>
 </BsForm>

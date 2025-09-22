@@ -1,4 +1,4 @@
-/* eslint-env node, mocha */
+/* global describe, it */
 const {
   setupTestHooks,
   emberNew,

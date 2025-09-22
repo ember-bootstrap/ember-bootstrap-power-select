@@ -82,7 +82,7 @@ module.exports = {
       this.ui.writeLine(
         chalk.green(`Added ember-power-select configuration to ${file}`),
       );
-    } catch (error) {
+    } catch {
       let settingsString = JSON.stringify(settings);
       this.ui.writeLine(
         chalk.red(

@@ -1,4 +1,7 @@
-{{#let (component (if @powerSelectComponent @powerSelectComponent "power-select")) as |PowerSelect|}}
+{{#let
+  (component (if @powerSelectComponent @powerSelectComponent "power-select"))
+  as |PowerSelect|
+}}
   <PowerSelect
     @afterOptionsComponent={{@afterOptionsComponent}}
     @allowClear={{@allowClear}}
@@ -44,7 +47,11 @@
     @search={{@search}}
     @searchEnabled={{@searchEnabled}}
     @searchFieldPosition={{@searchFieldPosition}}
-    @searchField={{if (has-block) @searchField (if @searchField @searchField @optionLabelPath)}}
+    @searchField={{if
+      (has-block)
+      @searchField
+      (if @searchField @searchField @optionLabelPath)
+    }}
     @searchMessage={{@searchMessage}}
     @searchPlaceholder={{@searchPlaceholder}}
     @selected={{@value}}
