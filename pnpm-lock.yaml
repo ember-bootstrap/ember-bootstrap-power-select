@@ -43,7 +43,7 @@ importers:
         specifier: 1.1.2
         version: 1.1.2
       '@release-it-plugins/lerna-changelog':
-        specifier: ^8.0.1
+        specifier: 8.0.1
         version: 8.0.1(release-it@19.0.5(@types/node@24.5.1))
       babel-eslint:
         specifier: 10.1.0
