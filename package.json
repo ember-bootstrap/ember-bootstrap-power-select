@@ -17,6 +17,8 @@
   "scripts": {
     "build": "ember build --environment=production",
     "lint": "concurrently \"npm:lint:*(!fix)\" --names \"lint:\"",
+    "lint:css": "stylelint \"**/*.css\"",
+    "lint:css:fix": "concurrently \"npm:lint:css -- --fix\"",
     "lint:fix": "concurrently \"npm:lint:*:fix\" --names \"fix:\"",
     "lint:hbs": "ember-template-lint .",
     "lint:hbs:fix": "ember-template-lint . --fix",
@@ -35,6 +37,8 @@
     "ember-cli-htmlbars": "^6.2.0"
   },
   "devDependencies": {
+    "@babel/eslint-parser": "^7.21.3",
+    "@babel/plugin-proposal-decorators": "^7.21.0",
     "@ember/optional-features": "2.2.0",
     "@ember/string": "4.0.1",
     "@ember/test-helpers": "5.3.0",
@@ -43,7 +47,6 @@
     "@glimmer/component": "1.1.2",
     "@glimmer/tracking": "1.1.2",
     "@release-it-plugins/lerna-changelog": "^8.0.1",
-    "babel-eslint": "10.1.0",
     "bootstrap": "5.3.8",
     "broccoli-asset-rev": "3.0.0",
     "concurrently": "9.2.1",
@@ -66,7 +69,7 @@
     "ember-source-channel-url": "3.0.0",
     "ember-template-lint": "7.9.3",
     "ember-try": "4.0.0",
-    "eslint": "7.32.0",
+    "eslint": "8.37.0",
     "eslint-config-prettier": "10.1.8",
     "eslint-plugin-ember": "11.12.0",
     "eslint-plugin-n": "17.23.1",
@@ -78,12 +81,15 @@
     "qunit": "2.24.1",
     "qunit-dom": "3.5.0",
     "release-it": "19.0.5",
+    "stylelint": "^15.4.0",
+    "stylelint-config-standard": "^32.0.0",
+    "stylelint-prettier": "^3.0.0",
     "webpack": "5.101.3"
   },
   "peerDependencies": {
     "ember-bootstrap": ">=5",
     "ember-power-select": ">=6",
-    "ember-source": ">3.28"
+    "ember-source": ">=3.28"
   },
   "engines": {
     "node": "20.* || 22.* || >= 24"
