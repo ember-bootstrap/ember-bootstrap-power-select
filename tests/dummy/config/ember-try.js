@@ -57,25 +57,6 @@ module.exports = async function () {
         },
       },
       {
-        name: 'ember-classic',
-        env: {
-          EMBER_OPTIONAL_FEATURES: JSON.stringify({
-            'application-template-wrapper': true,
-            'default-async-observers': false,
-            'template-only-glimmer-components': false,
-          }),
-        },
-        npm: {
-          devDependencies: {
-            'ember-cli': '~3.28.0',
-            'ember-source': '~3.28.0',
-          },
-          ember: {
-            edition: 'classic',
-          },
-        },
-      },
-      {
         name: 'ember-power-select-v6',
         npm: {
           devDependencies: {
