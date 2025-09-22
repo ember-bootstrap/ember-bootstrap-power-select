@@ -12,6 +12,7 @@ module.exports = async function () {
         npm: {
           devDependencies: {
             'ember-bootstrap': '^5.0.0',
+            'ember-cli': '~3.28.0',
             'ember-source': '~3.28.0',
           },
         },
@@ -70,6 +71,7 @@ module.exports = async function () {
         },
         npm: {
           devDependencies: {
+            'ember-cli': '~3.28.0',
             'ember-source': '~3.28.0',
           },
           ember: {
@@ -81,6 +83,7 @@ module.exports = async function () {
         name: 'ember-power-select-v6',
         npm: {
           devDependencies: {
+            'ember-cli': '~3.28.0',
             'ember-power-select': '^6.0.0',
           },
         },
@@ -89,6 +92,7 @@ module.exports = async function () {
         name: 'ember-power-select-v7',
         npm: {
           devDependencies: {
+            'ember-cli': '~3.28.0',
             'ember-power-select': '^7.0.0',
           },
         },
