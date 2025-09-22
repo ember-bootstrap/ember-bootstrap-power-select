@@ -82,7 +82,7 @@ importers:
         specifier: 0.19.2
         version: 0.19.2
       ember-cli-clean-css:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       ember-cli-dependency-checker:
         specifier: 3.3.3
@@ -136,8 +136,8 @@ importers:
         specifier: 10.1.8
         version: 10.1.8(eslint@9.25.1(jiti@2.6.0))
       eslint-plugin-ember:
-        specifier: 12.5.0
-        version: 12.5.0(@babel/core@7.28.4)(eslint@9.25.1(jiti@2.6.0))(typescript@5.9.2)
+        specifier: 12.7.4
+        version: 12.7.4(@babel/core@7.28.4)(eslint@9.25.1(jiti@2.6.0))(typescript@5.9.2)
       eslint-plugin-n:
         specifier: 17.23.1
         version: 17.23.1(eslint@9.25.1(jiti@2.6.0))(typescript@5.9.2)
@@ -3266,8 +3266,8 @@ packages:
     peerDependencies:
       eslint: '>=7.0.0'
 
-  eslint-plugin-ember@12.5.0:
-    resolution: {integrity: sha512-DBUzsaKWDVXsujAZPpRir0O7owdlCoVzZmtaJm7g7iQeSrNtcRWI7AItsTqKSsws1XeAySH0sPsQItMdDCb9Fg==}
+  eslint-plugin-ember@12.7.4:
+    resolution: {integrity: sha512-0q6C9VEnHe9hbgs6TgFWHVyEZRrPwOdkqkiLFh7HkxQH0Y/RhCLCLiU695sfTacIk8ofzLcQSp9Fhd1WIZY9eA==}
     engines: {node: 18.* || 20.* || >= 21}
     peerDependencies:
       '@typescript-eslint/parser': '*'
@@ -11124,7 +11124,7 @@ snapshots:
     dependencies:
       eslint: 9.25.1(jiti@2.6.0)
 
-  eslint-plugin-ember@12.5.0(@babel/core@7.28.4)(eslint@9.25.1(jiti@2.6.0))(typescript@5.9.2):
+  eslint-plugin-ember@12.7.4(@babel/core@7.28.4)(eslint@9.25.1(jiti@2.6.0))(typescript@5.9.2):
     dependencies:
       '@ember-data/rfc395-data': 0.0.4
       css-tree: 3.1.0
