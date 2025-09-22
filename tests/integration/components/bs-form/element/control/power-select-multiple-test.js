@@ -32,7 +32,7 @@ module(
         find('.ember-power-select-multiple-options')
           .textContent.replace('×', '')
           .trim(),
-        'foo'
+        'foo',
       );
       await clickTrigger();
       assert.dom('.ember-power-select-option').exists({ count: 2 });
@@ -54,7 +54,7 @@ module(
         find('.ember-power-select-multiple-option')
           .textContent.replace('×', '')
           .trim(),
-        'foo'
+        'foo',
       );
       await clickTrigger();
       assert.dom('.ember-power-select-option').exists({ count: 2 });
@@ -78,7 +78,7 @@ module(
         find('.ember-power-select-multiple-option')
           .textContent.replace('×', '')
           .trim(),
-        'foo'
+        'foo',
       );
       await clickTrigger();
       assert.dom('.ember-power-select-option').exists({ count: 2 });
@@ -94,7 +94,7 @@ module(
       <form.element @controlType="power-select-multiple" @property="prop" @options={{this.options}} />
     </BsForm>`);
       assert.ok(
-        find('.ember-power-select-trigger').getAttribute('aria-disabled')
+        find('.ember-power-select-trigger').getAttribute('aria-disabled'),
       );
 
       await render(hbs`
@@ -106,14 +106,14 @@ module(
       </form.element>
     </BsForm>`);
       assert.ok(
-        find('.ember-power-select-trigger').getAttribute('aria-disabled')
+        find('.ember-power-select-trigger').getAttribute('aria-disabled'),
       );
     });
 
     test('it can render array of objects with objectLabelPath', async function (assert) {
       this.set(
         'options',
-        this.options.map((title) => ({ title }))
+        this.options.map((title) => ({ title })),
       );
       this.set('model', {
         prop: [this.options[0]],
@@ -127,7 +127,7 @@ module(
         find('.ember-power-select-multiple-option')
           .textContent.replace('×', '')
           .trim(),
-        'foo'
+        'foo',
       );
       await clickTrigger();
       assert.dom('.ember-power-select-option').exists({ count: 2 });
@@ -166,5 +166,5 @@ module(
     </BsForm>`);
       assert.dom('[data-test-foo]').exists();
     });
-  }
+  },
 );

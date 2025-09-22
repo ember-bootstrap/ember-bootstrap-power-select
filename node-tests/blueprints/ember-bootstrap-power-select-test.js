@@ -37,7 +37,7 @@ describe('Acceptance: ember generate and destroy ember-bootstrap-power-select wi
       .then(() => emberGenerate(args))
       .then(() => {
         expect(file('app/styles/app.scss')).to.contain(
-          'ember-power-select/themes/bootstrap'
+          'ember-power-select/themes/bootstrap',
         );
       })
       .then(() => emberDestroy(args));
