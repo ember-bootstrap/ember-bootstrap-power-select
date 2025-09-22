@@ -5,8 +5,13 @@ import config from 'dummy/config/environment';
 import {
   dependencySatisfies,
   importSync,
+  isDevelopingApp,
   macroCondition,
 } from '@embroider/macros';
+
+if (macroCondition(isDevelopingApp())) {
+  importSync('./deprecation-workflow');
+}
 
 if (macroCondition(dependencySatisfies('ember-power-select', '>= 8.0.0'))) {
   importSync('ember-power-select/themes/bootstrap');
