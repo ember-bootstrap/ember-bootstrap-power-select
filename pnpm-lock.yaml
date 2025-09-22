@@ -76,7 +76,7 @@ importers:
         specifier: 0.19.2
         version: 0.19.2
       ember-cli-clean-css:
-        specifier: ^3.0.0
+        specifier: 3.0.0
         version: 3.0.0
       ember-cli-dependency-checker:
         specifier: 3.3.3
