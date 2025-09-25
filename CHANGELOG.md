@@ -6,6 +6,7 @@
 * [#395](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/395) drop support for Node < 20 ([@jelhan](https://github.com/jelhan))
 
 #### :rocket: Enhancement
+* [#392](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/392) Adds support for @searchFieldPosition argument introduced in Ember Power Select v8.6.2
 * [#393](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/393) drop rsvp and fs-extra dependencies ([@craigteegarden](https://github.com/craigteegarden))
 
 #### :memo: Documentation
