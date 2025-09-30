@@ -17,6 +17,7 @@ module.exports = async function () {
             'ember-page-title': '^8.0.0',
             'ember-resolver': '^11.0.0',
             'ember-source': '~3.28.0',
+            'ember-truth-helpers': '^4.0.0',
           },
         },
       },
