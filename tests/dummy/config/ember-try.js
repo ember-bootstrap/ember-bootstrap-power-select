@@ -11,9 +11,13 @@ module.exports = async function () {
         name: 'ember-lts-3.28',
         npm: {
           devDependencies: {
+            '@glimmer/component': '^1.0.0',
             'ember-bootstrap': '^5.0.0',
             'ember-cli': '~4.12.0',
-            'ember-source': '~4.12.0',
+            'ember-page-title': '^8.0.0',
+            'ember-resolver': '^11.0.0',
+            'ember-source': '~3.28.0',
+            'ember-truth-helpers': '^4.0.0',
           },
         },
       },
@@ -21,7 +25,7 @@ module.exports = async function () {
         name: 'ember-lts-4.12',
         npm: {
           devDependencies: {
-            'ember-source': '~5.8.0',
+            'ember-source': '~4.12.0',
           },
         },
       },
