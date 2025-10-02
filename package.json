@@ -48,7 +48,7 @@
     "@embroider/macros": "1.19.0",
     "@embroider/test-setup": "4.0.0",
     "@eslint/js": "9.36.0",
-    "@glimmer/component": "1.1.2",
+    "@glimmer/component": "2.0.0",
     "@glimmer/tracking": "1.1.2",
     "@release-it-plugins/lerna-changelog": "8.0.1",
     "bootstrap": "5.3.8",
