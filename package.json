@@ -82,7 +82,7 @@
     "eslint-plugin-qunit": "8.2.5",
     "globals": "16.4.0",
     "loader.js": "4.7.0",
-    "mocha": "11.7.3",
+    "mocha": "11.7.4",
     "prettier": "3.6.2",
     "prettier-plugin-ember-template-tag": "2.1.0",
     "qunit": "2.24.1",
