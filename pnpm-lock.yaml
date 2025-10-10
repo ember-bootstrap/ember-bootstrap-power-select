@@ -113,7 +113,7 @@ importers:
         version: 8.11.0(@babel/core@7.28.4)(@ember/test-helpers@5.3.0(@babel/core@7.28.4))(@glimmer/component@2.0.0)(ember-basic-dropdown@8.7.0(@babel/core@7.28.4)(@ember/string@4.0.1)(@ember/test-helpers@5.3.0(@babel/core@7.28.4))(@glimmer/component@2.0.0)(ember-source@6.7.0(@glimmer/component@2.0.0)(rsvp@4.8.5)))(ember-concurrency@5.1.0(@babel/core@7.28.4))(ember-source@6.7.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-qunit:
         specifier: 9.0.4
-        version: 9.0.4(@ember/test-helpers@5.3.0(@babel/core@7.28.4))(qunit@2.24.1)
+        version: 9.0.4(@ember/test-helpers@5.3.0(@babel/core@7.28.4))(qunit@2.24.2)
       ember-resolver:
         specifier: 13.1.1
         version: 13.1.1
@@ -160,8 +160,8 @@ importers:
         specifier: 2.1.0
         version: 2.1.0(prettier@3.6.2)
       qunit:
-        specifier: 2.24.1
-        version: 2.24.1
+        specifier: 2.24.2
+        version: 2.24.2
       qunit-dom:
         specifier: 3.5.0
         version: 3.5.0
@@ -5561,8 +5561,8 @@ packages:
   qunit-theme-ember@1.0.0:
     resolution: {integrity: sha512-vdMVVo6ecdCkWttMTKeyq1ZTLGHcA6zdze2zhguNuc3ritlJMhOXY5RDseqazOwqZVfCg3rtlmL3fMUyIzUyFQ==}
 
-  qunit@2.24.1:
-    resolution: {integrity: sha512-Eu0k/5JDjx0QnqxsE1WavnDNDgL1zgMZKsMw/AoAxnsl9p4RgyLODyo2N7abZY7CEAnvl5YUqFZdkImzbgXzSg==}
+  qunit@2.24.2:
+    resolution: {integrity: sha512-dWlYs+Q9AIDT3eHKgkpEpWrSjHjqTJNCAJr1tUo5bQuDMzlZvaqCz1bNZhqzNu41ibkIQ7b50S9y6IMlrrUfNQ==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -10597,12 +10597,12 @@ snapshots:
       - ember-source
       - supports-color
 
-  ember-qunit@9.0.4(@ember/test-helpers@5.3.0(@babel/core@7.28.4))(qunit@2.24.1):
+  ember-qunit@9.0.4(@ember/test-helpers@5.3.0(@babel/core@7.28.4))(qunit@2.24.2):
     dependencies:
       '@ember/test-helpers': 5.3.0(@babel/core@7.28.4)
       '@embroider/addon-shim': 1.10.0
       '@embroider/macros': 1.19.1
-      qunit: 2.24.1
+      qunit: 2.24.2
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
       - '@glint/template'
@@ -13626,7 +13626,7 @@ snapshots:
 
   qunit-theme-ember@1.0.0: {}
 
-  qunit@2.24.1:
+  qunit@2.24.2:
     dependencies:
       commander: 7.2.0
       node-watch: 0.7.3
