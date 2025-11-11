@@ -40,8 +40,8 @@ importers:
         specifier: 5.4.0
         version: 5.4.0(@babel/core@7.28.5)
       '@embroider/macros':
-        specifier: 1.19.2
-        version: 1.19.2
+        specifier: 1.19.4
+        version: 1.19.4
       '@embroider/test-setup':
         specifier: 4.0.0
         version: 4.0.0
@@ -835,8 +835,8 @@ packages:
     resolution: {integrity: sha512-gcJuHiXgnrzaU8NyU+2bMbtS6PNOr5v5B8OXBqaBvTCsMpXLvKo8OBOQFCoUN0rPX2J6VaFqrbi/371sMvzZug==}
     engines: {node: 12.* || 14.* || >= 16}
 
-  '@embroider/macros@1.19.2':
-    resolution: {integrity: sha512-lCG8Y58ZGz9kFvvEJjs3c8VDKDtLYV6iszEuQDyBgOtf1F+zizuZJFchLHSP4Vw5ND3Q4iF5I7tFQLGh0wODDg==}
+  '@embroider/macros@1.19.4':
+    resolution: {integrity: sha512-x4wrnkE6fPN6mOyJeJv2I+lpKE2pHPq25S8bCiRJJb3H3RyiTm2LjSeB4AOVTi8YUjiWToI4PBgZOtx44hM4LA==}
     engines: {node: 12.* || 14.* || >= 16}
     peerDependencies:
       '@glint/template': ^1.0.0
@@ -7694,7 +7694,7 @@ snapshots:
   '@ember/render-modifiers@3.0.0(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))':
     dependencies:
       '@babel/core': 7.28.5
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
       ember-cli-babel: 8.2.0(@babel/core@7.28.5)
       ember-modifier-manager-polyfill: 1.2.0(@babel/core@7.28.5)
       ember-source: 6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5)
@@ -7707,7 +7707,7 @@ snapshots:
     dependencies:
       '@ember/test-waiters': 4.1.1
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
       '@simple-dom/interface': 1.4.0
       decorator-transforms: 2.3.0(@babel/core@7.28.5)
       dom-element-descriptors: 0.5.1
@@ -7719,7 +7719,7 @@ snapshots:
   '@ember/test-waiters@4.1.1':
     dependencies:
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
     transitivePeerDependencies:
       - '@glint/template'
       - supports-color
@@ -7733,7 +7733,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@embroider/macros@1.19.2':
+  '@embroider/macros@1.19.4':
     dependencies:
       '@embroider/shared-internals': 3.0.1
       assert-never: 1.4.0
@@ -7788,7 +7788,7 @@ snapshots:
 
   '@embroider/util@1.13.4(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))':
     dependencies:
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
       broccoli-funnel: 3.0.8
       ember-cli-babel: 7.26.11
       ember-source: 6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5)
@@ -8371,7 +8371,7 @@ snapshots:
 
   '@types/glob@9.0.0':
     dependencies:
-      glob: 8.1.0
+      glob: 10.4.5
 
   '@types/http-errors@2.0.5': {}
 
@@ -10013,7 +10013,7 @@ snapshots:
       '@babel/plugin-proposal-private-methods': 7.18.6(@babel/core@7.28.5)
       '@babel/plugin-transform-class-static-block': 7.28.3(@babel/core@7.28.5)
       '@babel/preset-env': 7.28.5(@babel/core@7.28.5)
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
       '@embroider/shared-internals': 2.9.1
       babel-loader: 8.4.1(@babel/core@7.28.5)(webpack@5.102.1)
       babel-plugin-ember-modules-api-polyfill: 3.5.0
@@ -10052,7 +10052,7 @@ snapshots:
     dependencies:
       '@ember/test-helpers': 5.4.0(@babel/core@7.28.5)
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
       '@embroider/util': 1.13.4(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))
       '@glimmer/component': 2.0.0
       decorator-transforms: 2.3.0(@babel/core@7.28.5)
@@ -10071,7 +10071,7 @@ snapshots:
   ember-bootstrap@6.5.0(@babel/core@7.28.5)(@ember/string@4.0.1)(@glimmer/component@2.0.0)(@glimmer/tracking@1.1.2)(ember-modifier@4.2.2(@babel/core@7.28.5))(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.102.1):
     dependencies:
       '@ember/render-modifiers': 3.0.0(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
       '@embroider/util': 1.13.4(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))
       '@glimmer/component': 2.0.0
       '@glimmer/tracking': 1.1.2
@@ -10617,7 +10617,7 @@ snapshots:
     dependencies:
       '@ember/test-helpers': 5.4.0(@babel/core@7.28.5)
       '@embroider/addon-shim': 1.10.0
-      '@embroider/macros': 1.19.2
+      '@embroider/macros': 1.19.4
       qunit: 2.24.2
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
