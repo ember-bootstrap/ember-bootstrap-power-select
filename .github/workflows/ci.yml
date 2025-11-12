@@ -30,7 +30,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v6
         with:
-          node-version: 20.x
+          node-version: 24.x
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -51,7 +51,7 @@ jobs:
           version: 10
       - uses: actions/setup-node@v6
         with:
-          node-version: 20.x
+          node-version: 24.x
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --no-lockfile
@@ -87,7 +87,7 @@ jobs:
       - name: Install Node
         uses: actions/setup-node@v6
         with:
-          node-version: 20.x
+          node-version: 24.x
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --frozen-lockfile
@@ -107,7 +107,7 @@ jobs:
           version: 10
       - uses: actions/setup-node@v6
         with:
-          node-version: 20.x
+          node-version: 24.x
           cache: pnpm
       - name: Install Dependencies
         run: pnpm install --no-lockfile
