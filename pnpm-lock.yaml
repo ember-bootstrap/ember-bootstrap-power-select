@@ -73,8 +73,8 @@ importers:
         specifier: 8.8.0
         version: 8.8.0(@babel/core@7.28.5)(@ember/string@4.0.1)(@ember/test-helpers@5.4.0(@babel/core@7.28.5))(@glimmer/component@2.0.0)(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))
       ember-bootstrap:
-        specifier: 6.5.0
-        version: 6.5.0(@babel/core@7.28.5)(@ember/string@4.0.1)(@glimmer/component@2.0.0)(@glimmer/tracking@1.1.2)(ember-modifier@4.2.2(@babel/core@7.28.5))(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.102.1)
+        specifier: 6.6.1
+        version: 6.6.1(@babel/core@7.28.5)(@ember/string@4.0.1)(@glimmer/component@2.0.0)(@glimmer/tracking@1.1.2)(ember-modifier@4.2.2(@babel/core@7.28.5))(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.102.1)
       ember-cli:
         specifier: 6.7.2
         version: 6.7.2(@types/node@24.10.0)(handlebars@4.7.8)(underscore@1.13.7)
@@ -2837,8 +2837,8 @@ packages:
       '@ember/test-helpers': ^2.9.4 || ^3.2.1 || ^4.0.2 || ^5.0.0
       '@glimmer/component': ^1.1.2 || ^2.0.0
 
-  ember-bootstrap@6.5.0:
-    resolution: {integrity: sha512-qfuEjzVJL5PbTpHRlFQgFiEXbtJPrxqe1rdSxP/1OqhraJm5F2q1eB3K83685gz8wsQK1cEx9niYWt4jk4txEQ==}
+  ember-bootstrap@6.6.1:
+    resolution: {integrity: sha512-fmUygmIWhBRny2cPA3wokpXEZJNFGffmC6H0pFXByaP+d8S8Iw/yQppNsHzM2T3+zawnc7oUDs8EPA+3vRFoOw==}
     engines: {node: 18.* || >= 20}
     peerDependencies:
       '@glimmer/component': ^1.0.4
@@ -10068,7 +10068,7 @@ snapshots:
       - ember-source
       - supports-color
 
-  ember-bootstrap@6.5.0(@babel/core@7.28.5)(@ember/string@4.0.1)(@glimmer/component@2.0.0)(@glimmer/tracking@1.1.2)(ember-modifier@4.2.2(@babel/core@7.28.5))(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.102.1):
+  ember-bootstrap@6.6.1(@babel/core@7.28.5)(@ember/string@4.0.1)(@glimmer/component@2.0.0)(@glimmer/tracking@1.1.2)(ember-modifier@4.2.2(@babel/core@7.28.5))(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))(webpack@5.102.1):
     dependencies:
       '@ember/render-modifiers': 3.0.0(ember-source@6.8.1(@glimmer/component@2.0.0)(rsvp@4.8.5))
       '@embroider/macros': 1.19.4
