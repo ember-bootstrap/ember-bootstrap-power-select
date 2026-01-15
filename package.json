@@ -89,7 +89,7 @@
     "qunit-dom": "3.5.0",
     "release-it": "19.2.3",
     "stylelint": "17.0.0",
-    "stylelint-config-standard": "39.0.1",
+    "stylelint-config-standard": "40.0.0",
     "webpack": "5.104.1"
   },
   "peerDependencies": {
