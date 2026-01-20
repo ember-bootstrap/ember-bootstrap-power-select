@@ -87,7 +87,7 @@
     "prettier-plugin-ember-template-tag": "2.1.2",
     "qunit": "2.25.0",
     "qunit-dom": "3.5.0",
-    "release-it": "19.2.3",
+    "release-it": "19.2.4",
     "stylelint": "17.0.0",
     "stylelint-config-standard": "40.0.0",
     "webpack": "5.104.1"
