@@ -1,3 +1,36 @@
+## v6.0.0 (2025-09-25)
+
+#### :boom: Breaking Change
+
+- [#422](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/422) drop support for Ember classic (pre Octane) ([@jelhan](https://github.com/jelhan))
+- [#395](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/395) drop support for Node < 20 ([@jelhan](https://github.com/jelhan))
+
+#### :rocket: Enhancement
+
+- [#392](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/392) Adds support for @searchFieldPosition argument introduced in Ember Power Select v8.6.2
+- [#393](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/393) drop rsvp and fs-extra dependencies ([@craigteegarden](https://github.com/craigteegarden))
+
+#### :memo: Documentation
+
+- [#371](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/371) fix: advanced search example documentation ([@artemgurzhii](https://github.com/artemgurzhii))
+
+#### :house: Internal
+
+- [#428](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/428) upgrade with Ember CLI v6.4 blueprints ([@jelhan](https://github.com/jelhan))
+- [#426](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/426) upgrade with Ember CLI v5.12 blueprints ([@jelhan](https://github.com/jelhan))
+- [#425](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/425) upgrade with Ember CLI v4.12 blueprints ([@jelhan](https://github.com/jelhan))
+- [#396](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/396) ensure test coverage with ember-power-select v7 and v8 ([@jelhan](https://github.com/jelhan))
+- [#399](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/399) run blueprint tests in CI ([@jelhan](https://github.com/jelhan))
+- [#398](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/398) test against latest releases of all supported Ember major versions ([@jelhan](https://github.com/jelhan))
+- [#397](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/397) migrate to PNPM ([@jelhan](https://github.com/jelhan))
+
+#### Committers: 4
+
+- Artem Hurzhii ([@artemgurzhii](https://github.com/artemgurzhii))
+- Craig Teegarden ([@craigteegarden](https://github.com/craigteegarden))
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+- [@yeehaw1990-2](https://github.com/yeehaw1990-2)
+
 ## v5.0.0 (2023-02-24)
 
 Releasing latest RC (v5.0.0-0) as stable version. Please find details in release notes for that release.
