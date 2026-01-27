@@ -31,7 +31,7 @@ This addon provides the control components `PowerSelectControl` and `PowerSelect
 `@controlComponent` in a `<BsForm>`. Use the `@options` argument to set the available options.
 
 ```gjs
-import { PowerSelectControl } from 'ember-bootstrap-power-select';
+import { PowerSelectControl } from "ember-bootstrap-power-select";
 
 <template>
   <BsForm @model={{yourModel}} as |form|>
@@ -49,7 +49,7 @@ If your options array consists of objects, use the `optionLabelPath` to specify 
 options label:
 
 ```gjs
-import { PowerSelectControl } from 'ember-bootstrap-power-select';
+import { PowerSelectControl } from "ember-bootstrap-power-select";
 
 <template>
   <BsForm @model={{yourModel}} as |form|>
@@ -67,7 +67,7 @@ import { PowerSelectControl } from 'ember-bootstrap-power-select';
 If you need more control over how the options label are rendered (e.g. for formatting or internalization) you should use the yielded `<control>` component in block mode:
 
 ```gjs
-import { PowerSelectControl } from 'ember-bootstrap-power-select';
+import { PowerSelectControl } from "ember-bootstrap-power-select";
 
 <template>
   <BsForm @model={{yourModel}} as |form|>
@@ -88,7 +88,7 @@ import { PowerSelectControl } from 'ember-bootstrap-power-select';
 ```
 
 If not yet using Embroider in optimized mode, you can invoke the same control
-component by setting the `@controlType` to `power-select`. 
+component by setting the `@controlType` to `power-select`.
 
 ```hbs
 <BsForm @model={{yourModel}} as |form|>
@@ -106,7 +106,7 @@ component by setting the `@controlType` to `power-select`.
 The `PowerSelectMultiple` component is also supported and works similarly to the `PowerSelect` implementation.
 
 ```gjs
-import { PowerSelectMultipleControl } from 'ember-bootstrap-power-select';
+import { PowerSelectMultipleControl } from "ember-bootstrap-power-select";
 
 <template>
   <BsForm @model={{yourModel}} as |form|>
@@ -128,7 +128,7 @@ to the power-select component. The power-select's `selected`, `disabled` propert
 action are already wired up to the controlling `form.element` for you. Set any other options as you need:
 
 ```gjs
-import { PowerSelectControl } from 'ember-bootstrap-power-select';
+import { PowerSelectControl } from "ember-bootstrap-power-select";
 
 <template>
   <BsForm @model={{yourModel}} as |form|>
