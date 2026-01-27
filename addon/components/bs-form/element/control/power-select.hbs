@@ -1,5 +1,5 @@
 {{#let
-  (component (if @powerSelectComponent @powerSelectComponent "power-select"))
+  (ensure-safe-component (if @powerSelectComponent @powerSelectComponent this.PowerSelectComponent))
   as |PowerSelect|
 }}
   <PowerSelect

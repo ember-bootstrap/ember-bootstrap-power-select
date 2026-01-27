@@ -1,6 +1,6 @@
 {{#let
-  (component
-    (if @powerSelectComponent @powerSelectComponent "power-select-multiple")
+  (ensure-safe-component
+    (if @powerSelectComponent @powerSelectComponent this.PowerSelectMultipleComponent)
   )
   as |PowerSelect|
 }}
