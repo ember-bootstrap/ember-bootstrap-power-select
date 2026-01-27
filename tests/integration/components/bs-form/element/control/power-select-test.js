@@ -9,7 +9,7 @@ import {
 } from '@ember/test-helpers';
 import hbs from 'htmlbars-inline-precompile';
 import { clickTrigger } from 'ember-power-select/test-support/helpers';
-import PowerSelectControl from 'ember-bootstrap-power-select/components/bs-form/element/control/power-select';
+import { PowerSelectControl } from 'ember-bootstrap-power-select';
 
 module(
   'Integration | Component | bs form/element/control/power select',

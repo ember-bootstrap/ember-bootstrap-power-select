@@ -1,6 +1,5 @@
 import Controller from '@ember/controller';
-import PowerSelectControl from 'ember-bootstrap-power-select/components/bs-form/element/control/power-select';
-import PowerSelectMultipleControl from 'ember-bootstrap-power-select/components/bs-form/element/control/power-select-multiple';
+import { PowerSelectControl, PowerSelectMultipleControl } from 'ember-bootstrap-power-select';
 
 export default class ApplicationController extends Controller {
   options = ['foo', 'bar'];
