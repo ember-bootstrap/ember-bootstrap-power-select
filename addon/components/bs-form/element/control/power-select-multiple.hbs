@@ -1,6 +1,10 @@
 {{#let
   (ensure-safe-component
-    (if @powerSelectComponent @powerSelectComponent this.PowerSelectMultipleComponent)
+    (if
+      @powerSelectComponent
+      @powerSelectComponent
+      this.PowerSelectMultipleComponent
+    )
   )
   as |PowerSelect|
 }}
