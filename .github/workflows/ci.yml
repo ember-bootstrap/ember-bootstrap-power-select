@@ -76,8 +76,8 @@ jobs:
           - ember-canary
           - ember-power-select-v6
           - ember-power-select-v7
-          # - embroider-safe
-          # - embroider-optimized
+          - embroider-safe
+          - embroider-optimized
 
     steps:
       - uses: actions/checkout@v6
