@@ -68,7 +68,7 @@
     "ember-concurrency": "5.2.0",
     "ember-load-initializers": "3.0.1",
     "ember-page-title": "9.0.3",
-    "ember-power-select": "8.12.0",
+    "ember-power-select": "8.12.1",
     "ember-qunit": "9.0.4",
     "ember-resolver": "13.2.0",
     "ember-source": "6.11.0",
