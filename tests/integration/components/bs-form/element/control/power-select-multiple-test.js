@@ -10,6 +10,7 @@ import {
 import hbs from 'htmlbars-inline-precompile';
 import { clickTrigger } from 'ember-power-select/test-support/helpers';
 import { PowerSelectMultipleControl } from 'ember-bootstrap-power-select';
+import { dependencySatisfies } from '@embroider/macros';
 
 module(
   'Integration | Component | bs form/element/control/power select multiple',
@@ -89,6 +90,30 @@ module(
       await click(findAll('.ember-power-select-option')[1]);
       assert.deepEqual(this.model.prop, ['foo', 'bar']);
     });
+
+    test.if(
+      'it supports @controlType syntax',
+      !dependencySatisfies('@embroider/core', '*'),
+      async function (assert) {
+        await render(hbs`
+    <BsForm @model={{this.model}} as |form|>
+      <form.element @controlType="power-select-multiple" @property="prop" @options={{this.options}} />
+    </BsForm>`);
+        assert.dom('.ember-power-select-trigger').exists({ count: 1 });
+        assert.strictEqual(
+          find('.ember-power-select-multiple-options')
+            .textContent.replace('×', '')
+            .trim(),
+          'foo',
+        );
+        await clickTrigger();
+        assert.dom('.ember-power-select-option').exists({ count: 2 });
+        assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
+        assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
+        await click(findAll('.ember-power-select-option')[1]);
+        assert.deepEqual(this.model.prop, ['foo', 'bar']);
+      },
+    );
 
     test('it can disable select', async function (assert) {
       await render(hbs`

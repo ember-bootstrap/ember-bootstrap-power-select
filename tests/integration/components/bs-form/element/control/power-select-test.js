@@ -10,6 +10,7 @@ import {
 import hbs from 'htmlbars-inline-precompile';
 import { clickTrigger } from 'ember-power-select/test-support/helpers';
 import { PowerSelectControl } from 'ember-bootstrap-power-select';
+import { dependencySatisfies } from '@embroider/macros';
 
 module(
   'Integration | Component | bs form/element/control/power select',
@@ -64,6 +65,21 @@ module(
           {{val}}
         </el.control>
       </form.element>
+    </BsForm>`);
+      assert.dom('.ember-power-select-trigger').exists({ count: 1 });
+      assert.dom('.ember-power-select-selected-item').hasText('foo');
+      await clickTrigger();
+      assert.dom('.ember-power-select-option').exists({ count: 2 });
+      assert.dom(findAll('.ember-power-select-option')[0]).hasText('foo');
+      assert.dom(findAll('.ember-power-select-option')[1]).hasText('bar');
+      await click(findAll('.ember-power-select-option')[1]);
+      assert.strictEqual(this.model.prop, 'bar');
+    });
+
+    test.if('it support @controlType syntax', !dependencySatisfies('@embroider/core', '*'), async function (assert) {
+      await render(hbs`
+    <BsForm @model={{this.model}} as |form|>
+      <form.element @controlType="power-select" @property="prop" @options={{this.options}} />
     </BsForm>`);
       assert.dom('.ember-power-select-trigger').exists({ count: 1 });
       assert.dom('.ember-power-select-selected-item').hasText('foo');
