@@ -1,5 +1,23 @@
 # Changelog
 
+## Release (2026-03-06)
+
+* ember-bootstrap-power-select 6.1.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-bootstrap-power-select`
+  * [#430](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/430) Support Embroider optimized ([@jelhan](https://github.com/jelhan))
+
+#### :house: Internal
+* `ember-bootstrap-power-select`
+  * [#455](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/455) clean-up release-it which was replaced by release-plan ([@jelhan](https://github.com/jelhan))
+  * [#452](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/452) setup release-plan ([@jelhan](https://github.com/jelhan))
+  * [#437](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/437) @ember/test-waiters v4 does not support Ember 3.28 breaking lockfile maintenance ([@jelhan](https://github.com/jelhan))
+  * [#434](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/434) ensure test coverage with Ember v3.28 and v4.12 ([@jelhan](https://github.com/jelhan))
+
+#### Committers: 1
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+
 ## v6.0.0 (2025-09-25)
 
 #### :boom: Breaking Change
