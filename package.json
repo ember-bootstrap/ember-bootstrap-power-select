@@ -28,9 +28,9 @@
     "lint:js:fix": "eslint . --fix",
     "start": "ember server",
     "test": "concurrently \"pnpm:lint\" \"pnpm:test:*\" --names \"lint,test:\" --prefixColors auto",
+    "test:blueprint": "mocha node-tests --recursive",
     "test:ember": "ember test",
-    "test:ember-compatibility": "ember try:each",
-    "test:blueprint": "mocha node-tests --recursive"
+    "test:ember-compatibility": "ember try:each"
   },
   "dependencies": {
     "@babel/core": "^7.27.1",
@@ -88,6 +88,7 @@
     "qunit": "2.25.0",
     "qunit-dom": "3.5.0",
     "release-it": "19.2.4",
+    "release-plan": "^0.17.4",
     "stylelint": "17.4.0",
     "stylelint-config-standard": "40.0.0",
     "webpack": "5.105.4"
