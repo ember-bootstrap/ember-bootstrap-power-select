@@ -1,3 +1,5 @@
+# Changelog
+
 ## v6.0.0 (2025-09-25)
 
 #### :boom: Breaking Change
