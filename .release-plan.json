@@ -1,0 +1,22 @@
+{
+  "solution": {
+    "ember-bootstrap-power-select": {
+      "impact": "minor",
+      "oldVersion": "6.0.0",
+      "newVersion": "6.1.0",
+      "tagName": "latest",
+      "constraints": [
+        {
+          "impact": "minor",
+          "reason": "Appears in changelog section :rocket: Enhancement"
+        },
+        {
+          "impact": "patch",
+          "reason": "Appears in changelog section :house: Internal"
+        }
+      ],
+      "pkgJSONPath": "./package.json"
+    }
+  },
+  "description": "## Release (2026-03-06)\n\n* ember-bootstrap-power-select 6.1.0 (minor)\n\n#### :rocket: Enhancement\n* `ember-bootstrap-power-select`\n  * [#430](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/430) Support Embroider optimized ([@jelhan](https://github.com/jelhan))\n\n#### :house: Internal\n* `ember-bootstrap-power-select`\n  * [#455](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/455) clean-up release-it which was replaced by release-plan ([@jelhan](https://github.com/jelhan))\n  * [#452](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/452) setup release-plan ([@jelhan](https://github.com/jelhan))\n  * [#437](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/437) @ember/test-waiters v4 does not support Ember 3.28 breaking lockfile maintenance ([@jelhan](https://github.com/jelhan))\n  * [#434](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/434) ensure test coverage with Ember v3.28 and v4.12 ([@jelhan](https://github.com/jelhan))\n\n#### Committers: 1\n- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))\n"
+}
