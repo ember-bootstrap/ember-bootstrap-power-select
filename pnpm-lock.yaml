@@ -64,8 +64,8 @@ importers:
         specifier: 9.2.1
         version: 9.2.1
       ember-auto-import:
-        specifier: 2.12.1
-        version: 2.12.1(webpack@5.105.4)
+        specifier: 2.13.0
+        version: 2.13.0(webpack@5.105.4)
       ember-basic-dropdown:
         specifier: 8.11.0
         version: 8.11.0(@babel/core@7.29.0)(@ember/string@4.0.1)(@ember/test-helpers@5.4.1(@babel/core@7.29.0))(@glimmer/component@2.0.0)(ember-source@6.11.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -2766,8 +2766,8 @@ packages:
   ember-assign-helper@0.5.1:
     resolution: {integrity: sha512-dXHbwlBTJWVjG7k4dhVrT3Gh4nQt6rC2LjyltuPztIhQ+YcPYHMqAPJRJYLGZu16aPSJbaGF8K+u51i7CLzqlQ==}
 
-  ember-auto-import@2.12.1:
-    resolution: {integrity: sha512-wyvl+aJJKOKbRSLqq6CyMsNrvurmX4SIWHHqZdC5giZ7P8ECGmcn9W9HFoVLpwXkFJoXhNV4L7mqqcU6881t0w==}
+  ember-auto-import@2.13.0:
+    resolution: {integrity: sha512-P6COSWDDC6qpgNdc33PyAubhTHUkKc1gUfP2oR4BZoHhUVoEMHiSOECHISd5a2J8DaNrcpFcZmjgb1vJ2ydkjw==}
     engines: {node: 12.* || 14.* || >= 16}
 
   ember-basic-dropdown@8.11.0:
@@ -9701,7 +9701,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-auto-import@2.12.1(webpack@5.105.4):
+  ember-auto-import@2.13.0(webpack@5.105.4):
     dependencies:
       '@babel/core': 7.29.0
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.29.0)
@@ -9776,7 +9776,7 @@ snapshots:
       broccoli-funnel: 3.0.8
       broccoli-merge-trees: 4.2.0
       chalk: 5.6.2
-      ember-auto-import: 2.12.1(webpack@5.105.4)
+      ember-auto-import: 2.13.0(webpack@5.105.4)
       ember-cli-babel: 8.3.1(@babel/core@7.29.0)
       ember-cli-build-config-editor: 0.5.1
       ember-cli-htmlbars: 7.0.0(@babel/core@7.29.0)(ember-source@6.11.0(@glimmer/component@2.0.0)(rsvp@4.8.5))
@@ -10296,7 +10296,7 @@ snapshots:
     dependencies:
       '@babel/core': 7.29.0
       '@popperjs/core': 2.11.8
-      ember-auto-import: 2.12.1(webpack@5.105.4)
+      ember-auto-import: 2.13.0(webpack@5.105.4)
       ember-cli-babel: 8.3.1(@babel/core@7.29.0)
       ember-cli-htmlbars: 6.3.0
       ember-modifier: 4.3.0(@babel/core@7.29.0)
@@ -10340,7 +10340,7 @@ snapshots:
 
   ember-ref-bucket@5.0.8(@babel/core@7.29.0)(webpack@5.105.4):
     dependencies:
-      ember-auto-import: 2.12.1(webpack@5.105.4)
+      ember-auto-import: 2.13.0(webpack@5.105.4)
       ember-cli-babel: 7.26.11
       ember-cli-htmlbars: 6.3.0
       ember-modifier: 4.3.0(@babel/core@7.29.0)
