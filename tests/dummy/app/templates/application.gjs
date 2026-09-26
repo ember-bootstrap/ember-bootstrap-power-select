@@ -1,0 +1,109 @@
+import pageTitle from 'ember-page-title/helpers/page-title';
+import BsForm from 'ember-bootstrap/components/bs-form';
+import BasicDropdownWormhole from 'ember-basic-dropdown/components/basic-dropdown-wormhole';
+
+<template>
+  {{pageTitle "Dummy"}}
+
+  <h2>Ember Bootstrap Power Select</h2>
+
+  <BsForm @model={{this}} as |form|>
+    <fieldset>
+      <legend>
+        Power Select
+      </legend>
+      <form.element
+        @controlComponent={{this.PowerSelectControl}}
+        @property="foo"
+        @label="foo"
+        placeholder="asf"
+        @options={{this.options}}
+        as |el|
+      >
+        <el.control
+          @searchEnabled={{false}}
+          @searchPlaceholder="Type your name"
+        />
+      </form.element>
+      <form.element
+        @controlComponent={{this.PowerSelectControl}}
+        @property="bar"
+        @label="bar"
+        @options={{this.options}}
+        as |el|
+      >
+        <el.control as |item|>
+          {{item}}
+        </el.control>
+      </form.element>
+      <form.element
+        @controlComponent={{this.PowerSelectControl}}
+        @property="baz"
+        @label="baz"
+        @options={{this.options}}
+      />
+      <form.element
+        @controlComponent={{this.PowerSelectControl}}
+        @property="baz"
+        @label="baz"
+        @options={{this.optionsPojo}}
+        @optionLabelPath="title"
+      />
+    </fieldset>
+
+    <fieldset>
+      <legend>
+        Power Select Multiple
+      </legend>
+      <form.element
+        @controlComponent={{this.PowerSelectMultipleControl}}
+        @property="fooMulti"
+        @label="foo"
+        placeholder="asf"
+        @options={{this.options}}
+        as |el|
+      >
+        <el.control
+          @searchEnabled={{false}}
+          @searchPlaceholder="Type your name"
+        />
+      </form.element>
+      <form.element
+        @controlComponent={{this.PowerSelectMultipleControl}}
+        @property="barMulti"
+        @label="bar"
+        @options={{this.options}}
+        as |el|
+      >
+        <el.control as |item|>
+          {{item}}
+        </el.control>
+      </form.element>
+      <form.element
+        @controlComponent={{this.PowerSelectMultipleControl}}
+        @property="bazMulti"
+        @label="baz"
+        @options={{this.options}}
+      />
+      <form.element
+        @controlComponent={{this.PowerSelectMultipleControl}}
+        @property="bazMulti"
+        @label="baz"
+        @options={{this.optionsPojo}}
+        @optionLabelPath="title"
+      />
+    </fieldset>
+  </BsForm>
+
+  <h3>Power Select Values</h3>
+  <p><strong>foo: </strong>{{this.foo}}</p>
+  <p><strong>bar: </strong>{{this.bar}}</p>
+  <p><strong>baz: </strong>{{this.baz}}</p>
+
+  <h3>Power Select Multiple Values</h3>
+  <p><strong>foo: </strong>{{this.fooMulti}}</p>
+  <p><strong>bar: </strong>{{this.barMulti}}</p>
+  <p><strong>baz: </strong>{{this.bazMulti}}</p>
+
+  <BasicDropdownWormhole />
+</template>
