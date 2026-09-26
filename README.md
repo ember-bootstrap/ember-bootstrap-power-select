@@ -18,7 +18,7 @@ forms.
 ## Installation
 
 1. Install Ember Power Select and configure it to use the Bootstrap theme.
-   
+
    Please see [Ember Power Select documentation](https://ember-power-select.com/docs/installation)
    for details.
 
@@ -122,7 +122,7 @@ import { PowerSelectControl } from "ember-bootstrap-power-select";
       @optionsLabelPath="title"
       as |el|
     >
-      <el.control @multiple={{true}}>
+      <el.control @multiple={{true}} />
     </form.element>
   </BsForm>
 </template>
