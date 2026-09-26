@@ -9,5 +9,6 @@
 !.*
 .*/
 /pnpm-lock.yaml
+CHANGELOG.md
 ember-cli-update.json
 *.html
