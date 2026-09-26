@@ -17,13 +17,16 @@ forms.
 
 ## Installation
 
-```bash
-ember install ember-bootstrap-power-select
-```
+1. Install Ember Power Select and configure it to use the Bootstrap theme.
+   
+   Please see [Ember Power Select documentation](https://ember-power-select.com/docs/installation)
+   for details.
 
-This will additionally install `ember-power-select` into your app, and setup its
-Bootstrap theme, either by importing the appropriate Less or Sass file (if you use one of these preprocessors), or by
-editing your `ember-cli-build.js` to include the static theme CSS (if you use plain CSS).
+2. Install Ember Bootstrap Power Select
+
+   ```bash
+   ember install ember-bootstrap-power-select
+   ```
 
 ## Usage
 
