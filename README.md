@@ -119,7 +119,7 @@ import { PowerSelectControl } from "ember-bootstrap-power-select";
       @optionsLabelPath="title"
       as |el|
     >
-      <el.control @multiple={{true}}>
+      <el.control @multiple={{true}} />
     </form.element>
   </BsForm>
 </template>

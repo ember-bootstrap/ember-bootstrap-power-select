@@ -69,6 +69,7 @@ export default [
     },
   },
   {
+    ...qunit.configs.recommended,
     files: ['tests/**/*-test.{js,gjs}'],
     plugins: {
       qunit,
@@ -78,6 +79,7 @@ export default [
    * CJS node files
    */
   {
+    ...n.configs['flat/recommended-script'],
     files: [
       '**/*.cjs',
       'blueprints/**/*.js',
@@ -105,9 +107,19 @@ export default [
     },
   },
   /**
+   * Node tests for blueprints
+   */
+  {
+    files: ['node-tests/**/*.js'],
+    rules: {
+      'n/no-unpublished-require': 'off',
+    },
+  },
+  /**
    * ESM node files
    */
   {
+    ...n.configs['flat/recommended-module'],
     files: ['**/*.mjs'],
     plugins: {
       n,
