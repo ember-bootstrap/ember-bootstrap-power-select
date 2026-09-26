@@ -107,15 +107,6 @@ export default [
     },
   },
   /**
-   * Node tests for blueprints
-   */
-  {
-    files: ['node-tests/**/*.js'],
-    rules: {
-      'n/no-unpublished-require': 'off',
-    },
-  },
-  /**
    * ESM node files
    */
   {
