@@ -2,6 +2,21 @@
 
 ## Release (2026-09-26)
 
+* ember-bootstrap-power-select 6.3.0 (minor)
+
+#### :rocket: Enhancement
+* `ember-bootstrap-power-select`
+  * [#477](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/477) Drop blueprints to prepare for v2 addon migration ([@jelhan](https://github.com/jelhan))
+
+#### :house: Internal
+* `ember-bootstrap-power-select`
+  * [#475](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/475) upgrade with Ember CLI v6.12 blueprints ([@jelhan](https://github.com/jelhan))
+
+#### Committers: 1
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+
+## Release (2026-09-26)
+
 * ember-bootstrap-power-select 6.2.0 (minor)
 
 #### :rocket: Enhancement
