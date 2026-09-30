@@ -37,8 +37,8 @@ importers:
         specifier: 3.0.0
         version: 3.0.0(@types/node@26.6.2)(supports-color@10.2.2)
       '@ember/test-helpers':
-        specifier: 5.5.1
-        version: 5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
+        specifier: 5.5.2
+        version: 5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/macros':
         specifier: 1.21.1
         version: 1.21.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -68,7 +68,7 @@ importers:
         version: 2.13.1(supports-color@10.2.2)(webpack@5.106.2(clean-css@5.3.3)(postcss@8.5.28)(uglify-js@3.19.3))
       ember-basic-dropdown:
         specifier: 8.11.1
-        version: 8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
+        version: 8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       ember-bootstrap:
         specifier: 6.7.0
         version: 6.7.0(@babel/core@7.29.7(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(@glimmer/tracking@1.1.2)(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.106.2(clean-css@5.3.3)(postcss@8.5.28)(uglify-js@3.19.3))
@@ -104,10 +104,10 @@ importers:
         version: 9.0.3(supports-color@10.2.2)
       ember-power-select:
         specifier: 8.12.0
-        version: 8.12.0(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-basic-dropdown@8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2))(ember-concurrency@5.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
+        version: 8.12.0(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-basic-dropdown@8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2))(ember-concurrency@5.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       ember-qunit:
         specifier: 9.0.4
-        version: 9.0.4(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2)
+        version: 9.0.4(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2)
       ember-resolver:
         specifier: 13.2.0
         version: 13.2.0
@@ -837,8 +837,8 @@ packages:
       '@glint/template':
         optional: true
 
-  '@ember/test-helpers@5.5.1':
-    resolution: {integrity: sha512-VxAP2GQ4iKLeB9icxKlTW8VzW8Z92g53R8+KWddsD8X/RyzpKj0k51UDYNzy3uwD/0Z6pND/+tiILmn4+7CWSQ==}
+  '@ember/test-helpers@5.5.2':
+    resolution: {integrity: sha512-XaSfroyfmOZf1d1J8QgqWnulxY3etBd7QEbOMCxfhdhphfadOoijoDVlzNUxkk91S6+C/G8NkjN7IMILTrMnZg==}
 
   '@ember/test-waiters@4.1.2':
     resolution: {integrity: sha512-zJwFaHLHjJn6mKoXYVM1SEyMT+U1JpaaSKg3JBmxHJwiIoJRI5djJ/CE33Z7N09mk5JfXd2xdhbd9LBWdlvAzg==}
@@ -6745,7 +6745,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)':
+  '@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)':
     dependencies:
       '@ember/test-waiters': 4.1.2(supports-color@10.2.2)
       '@embroider/addon-shim': 1.10.3(supports-color@10.2.2)
@@ -8715,9 +8715,9 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-basic-dropdown@8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2):
+  ember-basic-dropdown@8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
-      '@ember/test-helpers': 5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
+      '@ember/test-helpers': 5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/addon-shim': 1.10.3(supports-color@10.2.2)
       '@embroider/macros': 1.21.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/util': 1.13.5(@babel/core@7.29.7(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
@@ -9242,15 +9242,15 @@ snapshots:
       - supports-color
       - webpack
 
-  ember-power-select@8.12.0(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-basic-dropdown@8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2))(ember-concurrency@5.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2):
+  ember-power-select@8.12.0(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-basic-dropdown@8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2))(ember-concurrency@5.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2):
     dependencies:
-      '@ember/test-helpers': 5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
+      '@ember/test-helpers': 5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/addon-shim': 1.10.3(supports-color@10.2.2)
       '@embroider/util': 1.13.5(@babel/core@7.29.7(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       '@glimmer/component': 2.1.1(supports-color@10.2.2)
       decorator-transforms: 2.4.0(@babel/core@7.29.7(supports-color@10.2.2))
       ember-assign-helper: 0.5.1(supports-color@10.2.2)
-      ember-basic-dropdown: 8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
+      ember-basic-dropdown: 8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       ember-concurrency: 5.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       ember-element-helper: 0.8.8(supports-color@10.2.2)
       ember-modifier: 4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -9262,9 +9262,9 @@ snapshots:
       - ember-source
       - supports-color
 
-  ember-qunit@9.0.4(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2):
+  ember-qunit@9.0.4(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2):
     dependencies:
-      '@ember/test-helpers': 5.5.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
+      '@ember/test-helpers': 5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/addon-shim': 1.10.3(supports-color@10.2.2)
       '@embroider/macros': 1.21.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       qunit: 2.25.0
