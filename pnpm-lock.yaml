@@ -106,8 +106,8 @@ importers:
         specifier: 8.12.0
         version: 8.12.0(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-basic-dropdown@8.11.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2))(ember-concurrency@5.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.0(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       ember-qunit:
-        specifier: 9.0.4
-        version: 9.0.4(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2)
+        specifier: 9.2.0
+        version: 9.2.0(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2)
       ember-resolver:
         specifier: 13.2.0
         version: 13.2.0
@@ -2718,11 +2718,11 @@ packages:
       ember-basic-dropdown: ^8.7.0
       ember-concurrency: ^4.0.4 || ^5.1.0
 
-  ember-qunit@9.0.4:
-    resolution: {integrity: sha512-rv6gKvrdXdPBTdSZC5co82eIcDWWVR7RjafU/c+5TTz290oXhIHPoVuZbcO2F5RiAqkTW0jKzwkCP8y+2tCjFw==}
+  ember-qunit@9.2.0:
+    resolution: {integrity: sha512-y/v9D7/wfH9fWh6p6NPNZ4KMJ97ZdowoASNmLvLrrzDYSVHJDbbbOfFMKLfdvHF942PHMlf6NulKVezO4yNfmw==}
     peerDependencies:
       '@ember/test-helpers': '>=3.0.3'
-      qunit: ^2.13.0
+      qunit: ^2.13.0 || ^3.0.0
 
   ember-ref-bucket@5.0.8:
     resolution: {integrity: sha512-OYKLpryoyrwDYpKTqrGIx7cvAouv3cLwY1YkTZjXYp+NM+J5PtNu+Zmend4EtQpKQhrOI+UDEcL2ERl2fXl91g==}
@@ -9262,16 +9262,13 @@ snapshots:
       - ember-source
       - supports-color
 
-  ember-qunit@9.0.4(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2):
+  ember-qunit@9.2.0(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(qunit@2.25.0)(supports-color@10.2.2):
     dependencies:
       '@ember/test-helpers': 5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/addon-shim': 1.10.3(supports-color@10.2.2)
-      '@embroider/macros': 1.21.1(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       qunit: 2.25.0
       qunit-theme-ember: 1.0.0
     transitivePeerDependencies:
-      - '@babel/core'
-      - '@glint/template'
       - supports-color
 
   ember-ref-bucket@5.0.8(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.106.2(clean-css@5.3.3)(postcss@8.5.28)(uglify-js@3.19.3)):
