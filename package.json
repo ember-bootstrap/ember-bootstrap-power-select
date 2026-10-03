@@ -90,7 +90,7 @@
   },
   "peerDependencies": {
     "ember-bootstrap": ">=5",
-    "ember-power-select": ">=6",
+    "ember-power-select": ">= 8.11",
     "ember-source": ">= 4.12"
   },
   "engines": {

@@ -55,26 +55,6 @@ module.exports = async function () {
           },
         },
       },
-      {
-        name: 'ember-power-select-v6',
-        npm: {
-          devDependencies: {
-            '@glimmer/component': '^1.0.0',
-            'ember-cli': '~4.12.0',
-            'ember-power-select': '^6.0.0',
-          },
-        },
-      },
-      {
-        name: 'ember-power-select-v7',
-        npm: {
-          devDependencies: {
-            '@glimmer/component': '^1.0.0',
-            'ember-cli': '~4.12.0',
-            'ember-power-select': '^7.0.0',
-          },
-        },
-      },
       embroiderSafe(),
       embroiderOptimized(),
     ],

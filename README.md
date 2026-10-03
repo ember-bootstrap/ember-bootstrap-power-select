@@ -9,7 +9,7 @@ forms.
 
 ## Compatibility
 
-- Ember Power Select v6 or above
+- Ember Power Select v8.11 or above
 - Ember Bootstrap v5 or above
 - Ember.js v4.12 or above
 - Ember CLI v4.12 or above
