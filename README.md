@@ -128,6 +128,25 @@ import { PowerSelectControl } from "ember-bootstrap-power-select";
 </template>
 ```
 
+Ember Bootstrap Power Select provides the `PowerSelectMultipleControl` component, which supports older
+versions of Ember Power Select by using its `PowerSelectMultiple` component:
+
+```gjs
+import { PowerSelectMultipleControl } from "ember-bootstrap-power-select";
+
+<template>
+  <BsForm @model={{yourModel}} as |form|>
+    <form.element
+      @controlComponent={{PowerSelectMultipleControl}}
+      @property="foo"
+      @label="Choose"
+      @options={{options}}
+      @optionsLabelPath="title"
+    />
+  </BsForm>
+</template>
+```
+
 ### Advanced usage
 
 If you need more control of the power-select configuration, use the yielded `control` component to get direct access
