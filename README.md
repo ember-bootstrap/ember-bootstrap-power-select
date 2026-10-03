@@ -13,7 +13,7 @@ forms.
 - Ember Bootstrap v5 or above
 - Ember.js v4.12 or above
 - Ember CLI v4.12 or above
-- Node.js v20 or above
+- Node.js v22 or above
 
 ## Installation
 
