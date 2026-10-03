@@ -1,5 +1,28 @@
 # Changelog
 
+## Release (2026-10-03)
+
+* ember-bootstrap-power-select 7.0.0 (major)
+
+#### :boom: Breaking Change
+* `ember-bootstrap-power-select`
+  * [#512](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/512) drop support for PowerSelectMultipleControl component ([@jelhan](https://github.com/jelhan))
+  * [#509](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/509) drop support for Node 20 and other EOL versions ([@jelhan](https://github.com/jelhan))
+  * [#506](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/506) drop support for Ember Power Select < 8.11 ([@jelhan](https://github.com/jelhan))
+  * [#504](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/504) drop support for Ember < 4.12 ([@jelhan](https://github.com/jelhan))
+
+#### :rocket: Enhancement
+* `ember-bootstrap-power-select`
+  * [#516](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/516) support Ember Power Select v9 ([@jelhan](https://github.com/jelhan))
+  * [#477](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/477) Drop blueprints to prepare for v2 addon migration ([@jelhan](https://github.com/jelhan))
+
+#### :house: Internal
+* `ember-bootstrap-power-select`
+  * [#475](https://github.com/ember-bootstrap/ember-bootstrap-power-select/pull/475) upgrade with Ember CLI v6.12 blueprints ([@jelhan](https://github.com/jelhan))
+
+#### Committers: 1
+- Jeldrik Hanschke ([@jelhan](https://github.com/jelhan))
+
 ## Release (2026-09-26)
 
 * ember-bootstrap-power-select 6.2.0 (minor)
