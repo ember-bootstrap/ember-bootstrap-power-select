@@ -91,7 +91,7 @@
   "peerDependencies": {
     "ember-bootstrap": ">=5",
     "ember-power-select": ">=6",
-    "ember-source": ">=3.28"
+    "ember-source": ">= 4.12"
   },
   "engines": {
     "node": ">= 20.19 || 22.* || >= 24"
