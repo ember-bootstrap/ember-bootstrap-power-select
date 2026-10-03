@@ -79,7 +79,7 @@
     "eslint-plugin-qunit": "8.2.6",
     "globals": "17.13.0",
     "loader.js": "4.7.0",
-    "prettier": "3.8.5",
+    "prettier": "3.9.9",
     "prettier-plugin-ember-template-tag": "2.1.8",
     "qunit": "2.25.0",
     "qunit-dom": "3.5.1",
