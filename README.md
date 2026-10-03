@@ -106,8 +106,7 @@ component by setting the `@controlType` to `power-select`.
 
 ### Multiple selection
 
-Selecting multiple options is supported through the `@multiple={{true}}` argument as of Ember Power Select 8.11
-and Ember Bootstrap Power Select 6.2:
+Selecting multiple options is supported through the `@multiple={{true}}` argument:
 
 ```gjs
 import { PowerSelectControl } from "ember-bootstrap-power-select";
@@ -124,25 +123,6 @@ import { PowerSelectControl } from "ember-bootstrap-power-select";
     >
       <el.control @multiple={{true}} />
     </form.element>
-  </BsForm>
-</template>
-```
-
-Ember Bootstrap Power Select provides the `PowerSelectMultipleControl` component, which supports older
-versions of Ember Power Select by using its `PowerSelectMultiple` component:
-
-```gjs
-import { PowerSelectMultipleControl } from "ember-bootstrap-power-select";
-
-<template>
-  <BsForm @model={{yourModel}} as |form|>
-    <form.element
-      @controlComponent={{PowerSelectMultipleControl}}
-      @property="foo"
-      @label="Choose"
-      @options={{options}}
-      @optionsLabelPath="title"
-    />
   </BsForm>
 </template>
 ```
