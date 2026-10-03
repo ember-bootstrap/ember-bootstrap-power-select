@@ -9,7 +9,7 @@ forms.
 
 ## Compatibility
 
-- Ember Power Select v6 or above
+- Ember Power Select v8.11 or above
 - Ember Bootstrap v5 or above
 - Ember.js v4.12 or above
 - Ember CLI v4.12 or above
@@ -124,25 +124,6 @@ import { PowerSelectControl } from "ember-bootstrap-power-select";
     >
       <el.control @multiple={{true}} />
     </form.element>
-  </BsForm>
-</template>
-```
-
-Ember Bootstrap Power Select provides the `PowerSelectMultipleControl` component, which supports older
-versions of Ember Power Select by using its `PowerSelectMultiple` component:
-
-```gjs
-import { PowerSelectMultipleControl } from "ember-bootstrap-power-select";
-
-<template>
-  <BsForm @model={{yourModel}} as |form|>
-    <form.element
-      @controlComponent={{PowerSelectMultipleControl}}
-      @property="foo"
-      @label="Choose"
-      @options={{options}}
-      @optionsLabelPath="title"
-    />
   </BsForm>
 </template>
 ```
