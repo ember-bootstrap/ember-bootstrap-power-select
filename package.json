@@ -81,7 +81,7 @@
     "loader.js": "4.7.0",
     "prettier": "3.9.9",
     "prettier-plugin-ember-template-tag": "2.1.8",
-    "qunit": "2.26.0",
+    "qunit": "3.0.0",
     "qunit-dom": "3.6.0",
     "release-plan": "0.20.1",
     "stylelint": "17.16.0",
