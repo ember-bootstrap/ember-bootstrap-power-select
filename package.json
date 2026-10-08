@@ -51,7 +51,7 @@
     "@glimmer/tracking": "1.1.2",
     "bootstrap": "5.3.8",
     "broccoli-asset-rev": "3.0.0",
-    "concurrently": "10.0.5",
+    "concurrently": "10.0.6",
     "ember-auto-import": "2.13.1",
     "ember-basic-dropdown": "9.0.0",
     "ember-bootstrap": "6.7.0",
