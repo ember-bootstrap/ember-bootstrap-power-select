@@ -65,13 +65,13 @@ importers:
         version: 10.0.6
       ember-auto-import:
         specifier: 2.13.1
-        version: 2.13.1(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+        version: 2.13.1(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       ember-basic-dropdown:
         specifier: 9.0.1
         version: 9.0.1(@babel/core@7.29.7(supports-color@10.2.2))(@ember/test-helpers@5.5.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@embroider/macros@1.21.3(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(supports-color@10.2.2)
       ember-bootstrap:
         specifier: 6.7.0
-        version: 6.7.0(@babel/core@7.29.7(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(@glimmer/tracking@1.1.2)(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+        version: 6.7.0(@babel/core@7.29.7(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(@glimmer/tracking@1.1.2)(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       ember-cli:
         specifier: 7.3.0
         version: 7.3.0(@babel/core@7.29.7(supports-color@10.2.2))(@types/node@26.6.5)(debug@4.4.3(supports-color@10.2.2))(ejs@3.1.10)(handlebars@4.7.10)(supports-color@10.2.2)(underscore@1.13.8)
@@ -166,8 +166,8 @@ importers:
         specifier: 40.0.0
         version: 40.0.0(stylelint@17.16.0(supports-color@10.2.2)(typescript@6.0.3))
       webpack:
-        specifier: 5.112.0
-        version: 5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
+        specifier: 5.112.2
+        version: 5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
 
 packages:
 
@@ -1684,6 +1684,11 @@ packages:
 
   ajv-formats@3.0.1:
     resolution: {integrity: sha512-8iUql50EUR+uUcdRQ3HDqa6EVyo3docL8g5WJ3FNcWmu62IbkGUue/pEyLBW8VGKKucTPgqeks4fIU1DA4yowQ==}
+    peerDependencies:
+      ajv: ^8.0.0
+    peerDependenciesMeta:
+      ajv:
+        optional: true
 
   ajv-keywords@3.5.2:
     resolution: {integrity: sha512-5p6WTN0DdTGVQk6VjcEju19IgaHudalcfabD7yhDGeA6bcQnmL+CpveLJq/3hvfwd1aof6L386Ougkx6RfyMIQ==}
@@ -5313,6 +5318,16 @@ packages:
     engines: {node: '>= 10.13.0'}
     hasBin: true
 
+  schema-utils@4.8.1:
+    resolution: {integrity: sha512-x39pYlJPyH7Uge5QO64B9XGP9zLDc9WNmiQZc+CE3IzZPvMu3lHOuAMGpYNoPixEL7MSWlGhYTg5UlLSL8G6iw==}
+    engines: {node: '>= 10.13.0'}
+    hasBin: true
+    peerDependencies:
+      webpack: ^5.112.0
+    peerDependenciesMeta:
+      webpack:
+        optional: true
+
   semver-deprecate@1.1.0:
     resolution: {integrity: sha512-5AcYPbRIw9vs80YkyRxmm3Lbe88STkwNIpTKKX0Kxyy/T0yR05BTZ6JhV9B5pjTyc81SjztcFPY93kDPRFwlyA==}
 
@@ -5941,8 +5956,8 @@ packages:
     resolution: {integrity: sha512-c9gP6tfJ8vK+eH84IF4+8r4Z/g2KhRc+XwLGl208tAIHR1mz0o7zy5Hkm+4XpACh8lNp9/EHqXHIQkw2nBbdYA==}
     engines: {node: '>= 8'}
 
-  watchpack@2.6.2:
-    resolution: {integrity: sha512-67nxRd7I5uAyn+KamYsCqU30iVgCgZ4aj8ZOGzmxs7zNPuvlnoYltm6+6JkOjEcD6WVXdu1BfH+gVQs3FUuW7Q==}
+  watchpack@2.6.3:
+    resolution: {integrity: sha512-s3NZy0QpTY9qGqzc0wtz4qI28z3+5qKbbAec4MV4G9N3CfgZ9wgvQRr0cl2jh/tqkWG1NWHkmVMHZpCamev5Wg==}
     engines: {node: '>=10.13.0'}
 
   wcwidth@1.0.1:
@@ -5955,8 +5970,8 @@ packages:
     resolution: {integrity: sha512-EIMmPVvNI0CYXyRPp34F2Qk7W37/BZVZIofS6LAUnrNjCVahS+hO4mxwFJDjQjODTGZDtVzLYoN2+1dYkhk9qA==}
     engines: {node: '>=10.13.0'}
 
-  webpack@5.112.0:
-    resolution: {integrity: sha512-NIBpsRuCll036haDDt/CfcTDfsWNR9Z782nMRMI9D377BsGcYzZDTNU5TyzhCJzPIcihAxMBaMAhq2WSaDrH8Q==}
+  webpack@5.112.2:
+    resolution: {integrity: sha512-B2tp1LI9D8GVpPDqprdt12ukTkXXahj9MzqSWJq4faSPgOUM7CdZaGAB6HrL/8E6UwbBpdj4vzWDbKoFnVoU6g==}
     engines: {node: '>=10.13.0'}
     hasBin: true
     peerDependencies:
@@ -8056,14 +8071,14 @@ snapshots:
 
   babel-import-util@3.0.1: {}
 
-  babel-loader@8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  babel-loader@8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       find-cache-dir: 3.3.2
       loader-utils: 2.0.4
       make-dir: 3.1.0
       schema-utils: 2.7.1
-      webpack: 5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
+      webpack: 5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
 
   babel-plugin-debug-macros@0.2.0(@babel/core@7.29.7(supports-color@10.2.2)):
     dependencies:
@@ -8926,7 +8941,7 @@ snapshots:
 
   css-functions-list@3.3.3: {}
 
-  css-loader@5.2.7(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  css-loader@5.2.7(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       icss-utils: 5.1.0(postcss@8.5.30)
       loader-utils: 2.0.4
@@ -8938,7 +8953,7 @@ snapshots:
       postcss-value-parser: 4.2.0
       schema-utils: 3.3.0
       semver: 7.8.5
-      webpack: 5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
+      webpack: 5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
 
   css-tree@3.2.1:
     dependencies:
@@ -9082,7 +9097,7 @@ snapshots:
 
   electron-to-chromium@1.5.459: {}
 
-  ember-auto-import@2.13.1(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  ember-auto-import@2.13.1(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       '@babel/plugin-proposal-class-properties': 7.18.6(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -9093,7 +9108,7 @@ snapshots:
       '@embroider/macros': 1.21.3(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/reverse-exports': 0.2.0
       '@embroider/shared-internals': 2.9.2(supports-color@10.2.2)
-      babel-loader: 8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      babel-loader: 8.4.1(@babel/core@7.29.7(supports-color@10.2.2))(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       babel-plugin-ember-modules-api-polyfill: 3.5.0
       babel-plugin-ember-template-compilation: 2.4.1
       babel-plugin-htmlbars-inline-precompile: 5.3.1
@@ -9103,7 +9118,7 @@ snapshots:
       broccoli-merge-trees: 4.2.0(supports-color@10.2.2)
       broccoli-plugin: 4.0.7(supports-color@10.2.2)
       broccoli-source: 3.0.1
-      css-loader: 5.2.7(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      css-loader: 5.2.7(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       debug: 4.4.3(supports-color@10.2.2)
       fs-extra: 10.1.0
       fs-tree-diff: 2.0.1(supports-color@10.2.2)
@@ -9111,14 +9126,14 @@ snapshots:
       is-subdir: 1.2.0
       js-string-escape: 1.0.1
       lodash: 4.18.1
-      mini-css-extract-plugin: 2.10.2(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      mini-css-extract-plugin: 2.10.2(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       minimatch: 3.1.5
       parse5: 6.0.1
       pkg-entry-points: 1.1.2
       resolve: 1.22.13
       resolve-package-path: 4.0.3
       semver: 7.8.5
-      style-loader: 2.0.0(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      style-loader: 2.0.0(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       typescript-memoize: 1.1.1
       walk-sync: 3.0.0
     transitivePeerDependencies:
@@ -9141,7 +9156,7 @@ snapshots:
       - '@babel/core'
       - supports-color
 
-  ember-bootstrap@6.7.0(@babel/core@7.29.7(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(@glimmer/tracking@1.1.2)(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  ember-bootstrap@6.7.0(@babel/core@7.29.7(supports-color@10.2.2))(@glimmer/component@2.1.1(supports-color@10.2.2))(@glimmer/tracking@1.1.2)(ember-modifier@4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2))(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       '@ember/render-modifiers': 3.0.0(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
       '@embroider/macros': 1.21.3(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -9152,7 +9167,7 @@ snapshots:
       broccoli-funnel: 3.0.8(supports-color@10.2.2)
       broccoli-merge-trees: 4.2.0(supports-color@10.2.2)
       chalk: 5.6.2
-      ember-auto-import: 2.13.1(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      ember-auto-import: 2.13.1(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       ember-cli-babel: 8.3.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       ember-cli-build-config-editor: 0.5.1
       ember-cli-htmlbars: 7.0.1(@babel/core@7.29.7(supports-color@10.2.2))(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)
@@ -9162,8 +9177,8 @@ snapshots:
       ember-focus-trap: 1.2.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       ember-modifier: 4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       ember-on-helper: 0.1.0(supports-color@10.2.2)
-      ember-popper-modifier: 4.1.1(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
-      ember-ref-bucket: 5.0.8(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      ember-popper-modifier: 4.1.1(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      ember-ref-bucket: 5.0.8(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       ember-render-helpers: 2.0.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       ember-source: 6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2)
       ember-style-modifier: 4.6.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -9643,11 +9658,11 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-popper-modifier@4.1.1(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  ember-popper-modifier@4.1.1(ember-source@6.12.1(@glimmer/component@2.1.1(supports-color@10.2.2))(rsvp@4.8.5)(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       '@babel/core': 7.29.7(supports-color@10.2.2)
       '@popperjs/core': 2.11.8
-      ember-auto-import: 2.13.1(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      ember-auto-import: 2.13.1(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       ember-cli-babel: 8.3.2(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
       ember-cli-htmlbars: 6.3.0(supports-color@10.2.2)
       ember-modifier: 4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -9681,9 +9696,9 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  ember-ref-bucket@5.0.8(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  ember-ref-bucket@5.0.8(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
-      ember-auto-import: 2.13.1(supports-color@10.2.2)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      ember-auto-import: 2.13.1(supports-color@10.2.2)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       ember-cli-babel: 7.26.11(supports-color@10.2.2)
       ember-cli-htmlbars: 6.3.0(supports-color@10.2.2)
       ember-modifier: 4.3.0(@babel/core@7.29.7(supports-color@10.2.2))(supports-color@10.2.2)
@@ -11439,11 +11454,11 @@ snapshots:
 
   mimic-response@1.0.1: {}
 
-  mini-css-extract-plugin@2.10.2(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  mini-css-extract-plugin@2.10.2(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       schema-utils: 4.6.0
       tapable: 2.3.3
-      webpack: 5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
+      webpack: 5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
 
   minimatch@10.2.6:
     dependencies:
@@ -11467,13 +11482,13 @@ snapshots:
 
   minimist@1.2.8: {}
 
-  minimizer-webpack-plugin@5.13.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  minimizer-webpack-plugin@5.13.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
-      schema-utils: 4.6.0
+      schema-utils: 4.8.1(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       terser: 5.51.2
-      webpack: 5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
+      webpack: 5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
     optionalDependencies:
       clean-css: 5.3.3
       postcss: 8.5.30
@@ -12326,6 +12341,15 @@ snapshots:
       ajv-formats: 3.0.1
       ajv-keywords: 5.1.0(ajv@8.20.0)
 
+  schema-utils@4.8.1(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+    dependencies:
+      '@types/json-schema': 7.0.15
+      ajv: 8.20.0
+      ajv-formats: 3.0.1
+      ajv-keywords: 5.1.0(ajv@8.20.0)
+    optionalDependencies:
+      webpack: 5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
+
   semver-deprecate@1.1.0:
     dependencies:
       chalk: 5.6.2
@@ -12673,11 +12697,11 @@ snapshots:
 
   stubborn-utils@1.0.2: {}
 
-  style-loader@2.0.0(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
+  style-loader@2.0.0(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)):
     dependencies:
       loader-utils: 2.0.4
       schema-utils: 3.3.0
-      webpack: 5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
+      webpack: 5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)
 
   styled_string@0.0.1: {}
 
@@ -13159,7 +13183,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  watchpack@2.6.2:
+  watchpack@2.6.3:
     dependencies:
       graceful-fs: 4.2.11
 
@@ -13171,7 +13195,7 @@ snapshots:
 
   webpack-sources@3.6.0: {}
 
-  webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3):
+  webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -13185,10 +13209,10 @@ snapshots:
       events: 3.3.0
       graceful-fs: 4.2.11
       mime-db: 1.54.0
-      minimizer-webpack-plugin: 5.13.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)(webpack@5.112.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
-      schema-utils: 4.6.0
+      minimizer-webpack-plugin: 5.13.0(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3)(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
+      schema-utils: 4.8.1(webpack@5.112.2(clean-css@5.3.3)(postcss@8.5.30)(uglify-js@3.19.3))
       tapable: 2.3.3
-      watchpack: 2.6.2
+      watchpack: 2.6.3
       webpack-sources: 3.6.0
     transitivePeerDependencies:
       - '@minify-html/node'
