@@ -1,5 +1,10 @@
 # Changelog
 
+
+
+
+
+
 ## Release (2026-10-03)
 
 * ember-bootstrap-power-select 7.0.0 (major)
